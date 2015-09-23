@@ -1178,17 +1178,12 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	-webkit-background-size: 70%;
 	background-size: 70%;
 }
-.price .item-price .title.wp{
-	background-image:url(../images/price/circle_wp.jpg);
-}
+.price .item-price .title.wp{}
 .price .item-price .title.cd{
-	background-image:url(../images/price/circle_cd.png);
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-.price .item-price .title.seo{
-	background-image:url(../images/price/circle_seo.jpg);
-}
+.price .item-price .title.seo{}
 .price .item-price .title:after{
 	display: block;
 	content: '';

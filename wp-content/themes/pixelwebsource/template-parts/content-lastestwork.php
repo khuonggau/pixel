@@ -22,12 +22,15 @@
             			<div class="wrapper-img">
             				<a href="#">
 								<?php
-									// check for featured image
-									if( has_post_thumbnail ){
-										$thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 
-										echo '<img src="'.$thumbnail_url.'">';
-									}
+								// check for featured image
+								if( has_post_thumbnail ){
+                                    $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                                    $thumbnail_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
+
+									echo '<img src="'.$thumbnail_url.'" alt="'.$thumbnail_alt.'">';
+								}
+                                
 								?>
 							</a>
             			</div>

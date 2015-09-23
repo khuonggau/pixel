@@ -8,6 +8,10 @@
  *
  * @package Pixelwebsource_Theme
  */
+
+// Custom Fields
+$main_class	= get_post_meta( $post->ID, 'main_class', true );
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -36,6 +40,14 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/font/ralewaylight/stylesheet.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/font/ralewayregular/stylesheet.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/font/ralewaymedium/stylesheet.css">
+<?php
+// import gear.css for pricing page
+if($main_class == "price"){ ?>
+
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/font/sanfrancisco/stylesheet.css">
+
+<?php } ?>
+
 <!--<script src="js/blockScroll.js"></script>-->
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/blockScroll.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/animation.css">
@@ -43,10 +55,21 @@
 <?php 
 // import except Home Page
 if($post->ID != 9) { ?>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/about.css">
+
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/about.css">
+
 <?php } ?>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/responsive-px.css">
+
+<?php
+// import gear.css for pricing page
+if($main_class == "price"){ ?>
+
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/gear.css">
+
+<?php } ?>
+
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -65,10 +88,6 @@ if($post->ID != 9) { ?>
 </head>
 
 <body <?php body_class(); ?>>
-<?php
-// Custom Fields
-$main_class	= get_post_meta( $post->ID, 'main_class', true );
-?>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pixelwebsource' ); ?></a>
 
@@ -128,6 +147,8 @@ $main_class	= get_post_meta( $post->ID, 'main_class', true );
 					get_template_part('template-parts/content','banner-partnership');
 				}else if($main_class == 'lastestwork'){
 					get_template_part('template-parts/content','lastestwork');
+				}else if($main_class == 'price'){
+					get_template_part('template-parts/content','pricing');
 				}
 			?>
 		</section><!-- pixel-wrapper -->
