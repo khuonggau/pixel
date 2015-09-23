@@ -53,36 +53,8 @@
 	    <div class="form-wrap">
 	        <div class="title">Tell Us About <span>Your</span> Project</div>
 	        <div lang="en-US" dir="ltr">
-	            <form action="" method="POST" class="rq-form" id="rq-form">
-	                <div class="input-wrap">
-		                <span class="wpcf7-form-control-wrap name">
-							<input id="full_name" maxlength="80" name="full_name" size="40" type="text" placeholder="Your Name" required data-parsley-id="2161"><ul class="parsley-errors-list" id="parsley-id-2161"></ul>
-						</span>
-	                </div><!-- input-wrap -->
-	                <div class="input-wrap odd">
-		                <span class="wpcf7-form-control-wrap phone">
-							<input id="phone" maxlength="40" name="phone" size="40" type="text" placeholder="Phone Number" required data-parsley-typersley-id="7200"><ul class="parsley-errors-list" id="parsley-id-7200"></ul>
-						</span>
-	                </div><!-- input-wrap -->
-	                <div class="input-wrap">
-		                <span class="wpcf7-form-control-wrap email">
-							<input id="email" name="email" value="" size="40" type="text" placeholder="Email Address" required data-parsley-type="email" data-parsley-id="0798"><ul class="parsley-errors-list" id="parsley-id-0798"></ul>
-						</span>
-	                </div><!-- input-wrap -->
-	                <div class="input-wrap odd">
-		                <span class="wpcf7-form-control-wrap country">
-							<input id="company" maxlength="40" name="company" size="20" type="text" placeholder="Company" required data-parsley-id="3385"><ul class="parsley-errors-list" id="parsley-id-3385"></ul>
-						</span>
-	                </div><!-- input-wrap -->
-	                <div class="textarea-wrap">
-		                <span class="wpcf7-form-control-wrap comment">
-						<textarea name="description" cols="40" rows="10" id="description" placeholder="Project Brief" required data-parsley-id="6757"></textarea><ul class="parsley-errors-list" id="parsley-id-6757"></ul>
-						</span>
-	                </div><!-- textarea-wrap -->
-	                <div class="submit-wrap">
-	                    <input type="submit" name="submit" id="quote-submit" value="Send">
-	                </div><!-- submit-wrap -->
-	            </form>
+
+	          	<?php echo do_shortcode( '[contact-form-7 id="101" title="Contact Quote" html_id="rq-form" html_class="rq-form"]' ); ?>
 	        </div>
 	    </div><!-- form-wrap -->
 	</div><!-- request_form -->

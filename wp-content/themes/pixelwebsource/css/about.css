@@ -293,15 +293,9 @@ _:-ms-fullscreen, :root .ct-height{
   text-align: center;
   margin-bottom: 20px;
 }
-.contact ul.ul-contact .contact-item .contact-image .img.shake {
-  background: url(../images/shake.png) no-repeat center bottom;
-}
-.contact  ul.ul-contact .contact-item .contact-image .img.business {
-  background: url(../images/business.png) no-repeat center bottom;
-}
-.contact  ul.ul-contact .contact-item .contact-image .img.employment {
-	background: url(../images/employment.png) no-repeat center bottom;
-}
+.contact ul.ul-contact .contact-item .contact-image .img.shake {}
+.contact  ul.ul-contact .contact-item .contact-image .img.business {}
+.contact  ul.ul-contact .contact-item .contact-image .img.employment {}
 .contact ul.ul-contact .contact-item .contact-image .img {
   display: block;
   height: 64px;

@@ -726,11 +726,10 @@ _:-ms-fullscreen, :root .form-wrap .rq-form .input-wrap input{
 }
 
 .form-wrap .rq-form span.wpcf7-not-valid-tip {
-	text-align:left;
-	font:12px/12px ralewaybold;
+	text-align: center;
+	font:14px/14px ralewaybold;
 	bottom:5px;
 	right:0;
-	position:absolute;
 }
 
 .form-wrap .rq-form div.wpcf7-mail-sent-ok {
