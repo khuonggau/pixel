@@ -90,7 +90,7 @@ jQuery(function($){
 			$('.about .masthead-brand, .blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
 			$('.privacy .masthead-brand,.term .masthead-brand,.price .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.design .masthead-brand,.marketing .masthead-brand,.partnership .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
-			$('.contact .masthead-brand').css({'background-image':'url(../images/logo2-w.png)'})
+			$('.contact .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
 			$('.lastestwork .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.single-work .masthead-brand').css({'background-image':'url(../../images/logo2.png)'})
 			$('.thankyou .masthead-brand').css({'background-image':'url(../images/logo2-w.png)'})
@@ -119,11 +119,11 @@ jQuery(function($){
 			$('.about .masthead-brand,.blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
 			$('.privacy .masthead-brand,.term .masthead-brand,.price .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.design .masthead-brand,.marketing .masthead-brand,.partnership .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
-			$('.contact .masthead-brand,.lastestwork .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
+			$('.contact .masthead-brand,.lastestwork .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.single-work .masthead-brand').css({'background-image':'url(../../images/logo2.png)'})
 			$('.thankyou .masthead-brand').css({'background-image':'url(../images/logo2-w.png)'})
 			$('.mastnav').css({'background':'#fff'})
-			$('.contact .masthead-brand').css({'background-image':'url(../images/logo2-w.png)'})
+			$('.contact .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
 			$('.px-main .mastnav,.design .mastnav, .partnership .mastnav, .contact .mastnav').css({'background':'none'})
 			$('.about .mastnav').css({'background':'#fff'})
 			$('.marketing .mastnav').css({'background':'none'})
@@ -373,6 +373,7 @@ jQuery(function($){
     }
 
     //validate contact form and sent email
+    /*
     if($('form.rq-form').length>0) {
         $('form.rq-form').each(function(i){
             var $this=$(this);
@@ -394,7 +395,7 @@ jQuery(function($){
                     description:{
                         required: true
                     }
-                },
+                }
                 submitHandler: function (form) {
                     var fullname=$this.find('input[name=full_name]').val();
                     var email=$this.find('input[name=email]').val();
@@ -425,4 +426,5 @@ jQuery(function($){
             });
         });
     } // End if
+    */
 });

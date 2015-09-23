@@ -271,11 +271,7 @@ _:-ms-fullscreen, :root .ct-height{
 .contact .masthead-brand {
   background-image: url(../images/logo2-w.png);
 }
-.contact .pixel-wrapper{
-	background: url(../photos/contact-us.jpg) center center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
+.contact .pixel-wrapper{}
 .contact ul.ul-contact{
 	text-align: center;
 	margin: 20px 0 0;

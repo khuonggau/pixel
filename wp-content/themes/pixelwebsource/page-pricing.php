@@ -61,13 +61,16 @@ get_header();
 	    </div><!-- site-wrapper -->
     </section><!-- cover-container -->
 </div><!-- main-wrapper -->
-<!--<div class="bullet-wrapper">
+<!--
+<div class="bullet-wrapper">
 	<ul>
 		<li><span></span></li>
 		<li><span></span></li>
 		<li><span></span></li>
 		<li><span></span></li>
 	</ul>
-</div><!-- bullet-wrapper -->
+</div>
+-->
+<!-- bullet-wrapper -->
 
 <?php get_footer(); ?>

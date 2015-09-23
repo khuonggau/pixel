@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Latest Work Page
+ * Template Name: Full-width Page
  */
 
 get_header();

@@ -149,6 +149,8 @@ if($main_class == "price"){ ?>
 					get_template_part('template-parts/content','lastestwork');
 				}else if($main_class == 'price'){
 					get_template_part('template-parts/content','pricing');
+				}else if($main_class == 'contact'){
+					get_template_part('template-parts/content','contact');
 				}
 			?>
 		</section><!-- pixel-wrapper -->
