@@ -9,8 +9,12 @@
  * @package Pixelwebsource_Theme
  */
 
-// Custom Fields
-$main_class	= get_post_meta( $post->ID, 'main_class', true );
+// Custom Fields for Post and Page
+if( is_home() ){
+	$main_class	= get_post_meta( get_option( 'page_for_posts' ), 'main_class', true );
+}elseif ( is_page() ) {
+	$main_class	= get_post_meta( $post->ID, 'main_class', true );
+}
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -25,6 +29,10 @@ $main_class	= get_post_meta( $post->ID, 'main_class', true );
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/bootstrap-3.3.4-dist/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/bootstrap-3.3.4-dist/css/cover.css">
 <!-- END Bootstrap CSS Library -->
+
+<!-- FontAwesome Icons -->
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome/css/font-awesome.min.css">
+
 <script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.min.js"></script>
 
 <!--[if lt IE 9]><script src="../bootstrap-3.3.4-dist/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -111,7 +119,7 @@ if($main_class == "price"){ ?>
 		    <a class="mobile-request-a-quote">quote</a>
 			<div class="mastnav clearfix top-bgc">
 		        <div class="inner">
-		          	<p class="masthead-brand"></p>
+		          	<a href="<?php echo home_url(); ?>"><p class="masthead-brand"></p></a>
 
 		          	<!-- If the menu (WP admin area) is not set, then the "menu_class" is applied to "container". In other words, it overwrites the "container_class".
 					Ref: https://wordpress.org/support/topic/wp_nav_menu-menu_class-usage-bug?replies=4 
@@ -151,6 +159,8 @@ if($main_class == "price"){ ?>
 					get_template_part('template-parts/content','pricing');
 				}else if($main_class == 'contact'){
 					get_template_part('template-parts/content','contact');
+				}else if($main_class == 'blog'){
+					
 				}
 			?>
 		</section><!-- pixel-wrapper -->

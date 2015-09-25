@@ -14,10 +14,35 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div class="site-wrapper">
+	    <h1>Blog</h1>
 
-		<?php if ( have_posts() ) : ?>
+	    <ul class="masonry">
+			<!--<li class="item">
+				<article class="post">
+					<div class="post-image">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/photos/thankyou.jpg" alt="Post image">
+					</div>
+					<div class="post-content">
+						<header>
+							<h3><a href="post.html">Blog title here</a></h3>
+							<div class="post-details">
+								<i class="fa fa-user"></i> Khuonggau
+								<i class="fa fa-clock-o"></i> <time>August 24, 2015</time>
+								<i class="fa fa-folder"></i> <a href="">Tutorials</a>, <a href="">Coding</a>
+								<i class="fa fa-tags"></i> Tagged <a href="">wordpress</a>, <a href="">premium</a>, <a href="">another tag</a>, <a href="">yadda yadda</a>
+							</div><!-- post-details -->
+						<!-- </header>
+						<div class="post-excerpt">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur blanditiis, neque ducimus dolore a tempore nesciunt eius quaerat eos molestiae, maxime nam repudiandae eligendi rem excepturi reprehenderit necessitatibus modi, magnam...</p>
+							<a class="btn btn-success" href="">Read More</a>
+						</div>
+					</div>
+				</article>
+			</li> -->
+			
+
+			<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -27,6 +52,7 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+				<li class="item">
 
 				<?php
 
@@ -38,18 +64,18 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', get_post_format() );
 				?>
 
+				</li>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+			<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+			<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</div><!-- site-wrapper -->
+</div><!-- main-wrapper -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

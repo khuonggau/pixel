@@ -10,34 +10,31 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<?php if( has_post_thumbnail() ) { // check for feature image ?>
+	<div class="post-image">
+		<?php the_post_thumbnail(); ?>
+	</div><!-- post-image -->
+	<?php } ?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php pixelwebsource_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+	<div class="post-content">
+		<header class="entry-header">
+			<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'pixelwebsource' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
+			<?php if ( 'post' === get_post_type() ) : ?>
+			
+			<div class="post-details">
+				<i class="fa fa-user"></i> <?php the_author(); ?>
+				<i class="fa fa-clock-o"></i> <time><?php the_date(); ?></time>
+				<i class="fa fa-folder"></i> <?php the_category(', '); ?>
+				<i class="fa fa-tags"></i> <?php the_author(); ?>
+			</div><!-- post-details -->
 
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pixelwebsource' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+			<?php endif; ?>
+		</header><!-- .entry-header -->
 
-	<footer class="entry-footer">
-		<?php pixelwebsource_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		<div class="post-excerpt">
+			<?php the_excerpt(); ?>
+			<a class="btn btn-success" href="#<?php // echo get_permalink($post->ID); ?>">Read More</a>
+		</div>
+	</div>
 </article><!-- #post-## -->

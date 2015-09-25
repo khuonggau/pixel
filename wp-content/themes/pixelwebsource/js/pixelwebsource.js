@@ -119,7 +119,7 @@ jQuery(function($){
 			$('.about .masthead-brand,.blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
 			$('.privacy .masthead-brand,.term .masthead-brand,.price .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.design .masthead-brand,.marketing .masthead-brand,.partnership .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
-			$('.contact .masthead-brand,.lastestwork .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/wp-content/themes/pixelwebsource/images/logo2.png)'})
+			$('.contact .masthead-brand,.lastestwork .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.single-work .masthead-brand').css({'background-image':'url(../../images/logo2.png)'})
 			$('.thankyou .masthead-brand').css({'background-image':'url(../images/logo2-w.png)'})
 			$('.mastnav').css({'background':'#fff'})
