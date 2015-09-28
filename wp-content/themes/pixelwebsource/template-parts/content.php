@@ -23,10 +23,12 @@
 			<?php if ( 'post' === get_post_type() ) : ?>
 			
 			<div class="post-details">
+				<i class="fa fa-clock-o"></i> <time><?php the_time( get_option('date_format') ); ?></time> by 
 				<i class="fa fa-user"></i> <?php the_author(); ?>
-				<i class="fa fa-clock-o"></i> <time><?php the_date(); ?></time>
-				<i class="fa fa-folder"></i> <?php the_category(', '); ?>
-				<i class="fa fa-tags"></i> <?php the_author(); ?>
+				<!--
+				<i class="fa fa-folder"></i> <?php // the_category(', '); ?>
+				<i class="fa fa-tags"></i> <?php // the_tags(); ?>
+				-->
 			</div><!-- post-details -->
 
 			<?php endif; ?>
@@ -34,7 +36,7 @@
 
 		<div class="post-excerpt">
 			<?php the_excerpt(); ?>
-			<a class="btn btn-success" href="#<?php // echo get_permalink($post->ID); ?>">Read More</a>
-		</div>
-	</div>
+			<a class="btn btn-success" href="<?php echo get_permalink($post->ID); ?>">Read More</a>
+		</div><!-- post-excerpt -->
+	</div><!-- post-content -->
 </article><!-- #post-## -->

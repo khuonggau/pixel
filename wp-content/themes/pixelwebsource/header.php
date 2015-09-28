@@ -9,11 +9,13 @@
  * @package Pixelwebsource_Theme
  */
 
-// Custom Fields for Post and Page
+// Custom Fields for Post List, Page, or Single Post
 if( is_home() ){
 	$main_class	= get_post_meta( get_option( 'page_for_posts' ), 'main_class', true );
 }elseif ( is_page() ) {
 	$main_class	= get_post_meta( $post->ID, 'main_class', true );
+}elseif ( is_single() ) {
+	$main_class = 'blog';
 }
 
 ?><!DOCTYPE html>
@@ -102,7 +104,14 @@ if($main_class == "price"){ ?>
 	<!-- MENU
 	===================================================== -->
 	<?php
-		$thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		// $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+
+		// check page for Post List, Page, or Single Post
+		if( is_home() ){
+			$thumbnail_url = '';
+		}elseif ( is_page() ) {
+			$thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		}
 	?>
 
 	<style>

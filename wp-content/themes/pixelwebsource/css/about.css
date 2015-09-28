@@ -987,7 +987,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 }
 
 .blog .site-wrapper{
-	background: #e5f1ca;
+	background: #F4F4F4;
 	margin-top: 66px;
 }
 .blog .site-wrapper h1{
@@ -1009,6 +1009,10 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
+	-webkit-box-shadow: 6px 6px 3px #c3c3c3;
+	-moz-box-shadow: 6px 6px 3px #c3c3c3;
+	box-shadow: 6px 6px 3px #c3c3c3;
+
 }
 .blog ul.masonry li.item .post a{
 	color: #000;
@@ -1018,7 +1022,8 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	height: auto;
 }
 .blog .post .post-content{
-	padding: 20px;
+	padding: 10px 20px 20px;
+	text-align: left;
 }
 .blog .post .post-content header{
 	margin: 0 0 15px;
@@ -1031,5 +1036,169 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	color: #fff;
 	border: 0;
 }
-
 /* end blog */
+
+/* blog detail */
+#primary {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #000;
+    -webkit-text-shadow:none;
+    -moz-text-shadow:none;
+    text-shadow:none;
+}
+#primary a{
+	color: #000;
+}
+#primary a:hover{
+	color:#007bb6;
+}
+#primary aside{
+	text-align: left;
+}
+
+.blog .single-post a{
+	color: #8acc43;
+}
+.blog .single-post img{
+	max-width: 100%;
+	height: auto;
+}
+.blog .single-post .post-content header{
+	padding: 0 20px 20px;
+	margin: 0;
+}
+.blog .single-post .post-content .post-image{
+	padding: 0 20px;
+}
+
+.single-post, .widget, #comments {
+    position: relative;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 0 0 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.single-post .post-body, #comments .comments-wrap {
+    padding: 20px;
+    text-align: left;
+}
+#comments h3 {
+    text-align: center;
+}
+#comments h4 {
+    font-size: 1.3em;
+}
+#comments ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#comments ol li {
+    background: rgba(0,0,0,0.02);
+    padding: 10px 20px;
+    margin: 10px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+#comments ol li ol.children {
+    padding: 0;
+    list-style: none;
+    font-size: 0.96em;
+}
+#leave-comment {
+    margin: 40px 0 0;
+    padding: 20px 0 0;
+    border-top: 1px solid #eee;
+}
+/* specific Wordpress comment styles */
+#comments footer{
+	background: none;
+	color: inherit;
+}
+#comments footer a{
+	color: inherit;	
+}
+#comments .comment-metadata{
+	margin: 10px 0 0;
+}
+
+/* ===== FORMS ===== */
+#leave-comment label{
+	display: block;
+	font-weight: 700;
+}
+#primary input[type="text"],
+#primary input[type="email"],
+#primary input[type="url"],
+#primary input[type="password"],
+#primary input[type="search"],
+#primary textarea{
+	color: #666;
+	border: 1px solid #ccc;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+}
+#primary input[type="submit"],
+#primary button[type="submit"]{
+	display: inline-block;
+	background-color: #5cb85c;
+	color: #fff;
+	padding: 6px 15px;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+#primary input[type="submit"]:hover,
+#primary button[type="submit"]:hover{
+	outline: none;
+	border: none;
+	background: #aaa;
+}
+/* === WIDGETS === */
+.widget{
+	padding: 20px;
+}
+.widget h4{
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ddd;
+}
+.widget ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget ul li{
+	margin: 0 0 5px;
+}
+.widget ul li:hover{
+	position: relative;
+	left: 1px;
+}
+/* END blog detail */

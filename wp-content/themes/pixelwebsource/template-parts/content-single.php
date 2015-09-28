@@ -9,27 +9,34 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('single-post'); ?>>
+	<div class="post-content">
+		<header class="entry-header">
+			<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
-		<div class="entry-meta">
-			<?php pixelwebsource_posted_on(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+			<?php if ( 'post' === get_post_type() ) : ?>
+			
+			<div class="post-details">
+				<i class="fa fa-clock-o"></i> <time><?php the_time( get_option('date_format') ); ?></time> by 
+				<i class="fa fa-user"></i> <?php the_author(); ?>
+				<!--
+				<i class="fa fa-folder"></i> <?php // the_category(', '); ?>
+				<i class="fa fa-tags"></i> <?php // the_tags(); ?>
+				-->
+			</div><!-- post-details -->
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'pixelwebsource' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+			<?php endif; ?>
+		</header><!-- .entry-header -->
 
-	<footer class="entry-footer">
-		<?php pixelwebsource_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+		<?php if( has_post_thumbnail() ) { // check for feature image ?>
+		<div class="post-image">
+			<?php the_post_thumbnail(); ?>
+		</div><!-- post-image -->
+		<?php } ?>
+
+		<div class="post-body">
+			<?php the_content(); ?>
+		</div><!-- post-body -->
+	</div><!-- post-content -->
 </article><!-- #post-## -->
 
