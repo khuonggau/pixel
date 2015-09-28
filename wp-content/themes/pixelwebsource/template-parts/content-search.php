@@ -10,22 +10,33 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<?php if( has_post_thumbnail() ) { // check for feature image ?>
+	<div class="post-image">
+		<?php the_post_thumbnail(); ?>
+	</div><!-- post-image -->
+	<?php } ?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php pixelwebsource_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+	<div class="post-content">
+		<header class="entry-header">
+			<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+			<?php if ( 'post' === get_post_type() ) : ?>
+			
+			<div class="post-details">
+				<i class="fa fa-clock-o"></i> <time><?php the_time( get_option('date_format') ); ?></time> by 
+				<i class="fa fa-user"></i> <?php the_author(); ?>
+				<!--
+				<i class="fa fa-folder"></i> <?php // the_category(', '); ?>
+				<i class="fa fa-tags"></i> <?php // the_tags(); ?>
+				-->
+			</div><!-- post-details -->
 
-	<footer class="entry-footer">
-		<?php pixelwebsource_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+			<?php endif; ?>
+		</header><!-- .entry-header -->
+
+		<div class="post-excerpt">
+			<?php the_excerpt(); ?>
+			<a class="btn btn-success" href="<?php echo get_permalink($post->ID); ?>">Read More</a>
+		</div><!-- post-excerpt -->
+	</div><!-- post-content -->
 </article><!-- #post-## -->
-

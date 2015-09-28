@@ -14,7 +14,7 @@ if( is_home() ){
 	$main_class	= get_post_meta( get_option( 'page_for_posts' ), 'main_class', true );
 }elseif ( is_page() ) {
 	$main_class	= get_post_meta( $post->ID, 'main_class', true );
-}elseif ( is_single() ) {
+}elseif ( is_single() || is_archive() || is_search() ) {
 	$main_class = 'blog';
 }
 

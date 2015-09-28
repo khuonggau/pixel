@@ -167,3 +167,12 @@ function custom_excerpt_length( $length ) {
 	return rand(20,60);
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 20 );
+
+/**
+ * Only search active for POST
+ */
+function remove_pages_from_search() {
+    global $wp_post_types;
+    $wp_post_types['page']->exclude_from_search = true;
+}
+add_action('init', 'remove_pages_from_search');
