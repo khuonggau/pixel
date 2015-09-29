@@ -88,7 +88,8 @@ jQuery(function($){
 		if($(window).scrollTop() >= lengthOfScroll){
 			$('.masthead-brand').css({'background-image':'url(wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
 			$('.about .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
-			$('.blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
+			$('.blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'});
+			$('.single-post .blog .masthead-brand, .archive .blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'});
 			$('.privacy .masthead-brand,.term .masthead-brand,.price .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.design .masthead-brand,.marketing .masthead-brand,.partnership .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.contact .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
@@ -114,11 +115,13 @@ jQuery(function($){
 				$('.blog .masthead-brand').css({'background-image':'url(../images/logo2.png)'})
 				$('.blog .mastnav').css({'background-color':'#fff'})
 				$('.blog .px-nav').css({'color':'000','background-color': '#fff'})
+				$('.single-post .blog .masthead-brand, .archive .blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)'});
 			}
 		}else{
 			$('.masthead-brand').css({'background-image':'url(wp-content/themes/pixelwebsource/images/logo2-w.png)','background-position':'0 0'})
 			$('.about .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
-			$('.blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
+			$('.blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
+			$('.single-post .blog .masthead-brand, .archive .blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'});
 			$('.privacy .masthead-brand,.term .masthead-brand,.price .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.design .masthead-brand,.marketing .masthead-brand,.partnership .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
 			$('.contact .masthead-brand,.lastestwork .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
@@ -154,9 +157,10 @@ jQuery(function($){
 				}
 			}
 			if($(window).width() < 669){
-				$('.blog .masthead-brand').css({'background-image':'url(../images/logo2.png)'})
-				$('.blog .mastnav').css({'background-color':'#fff'})
-				$('.blog .px-nav').css({'color':'000','background-color': '#fff'})
+				$('.blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'});
+				$('.blog .mastnav').css({'background-color':'#fff'});
+				$('.blog .px-nav').css({'color':'000','background-color': '#fff'});
+				$('.single-post .blog .masthead-brand, .archive .blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)'});
 			}
 		}					
 	})

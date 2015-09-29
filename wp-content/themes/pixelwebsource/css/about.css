@@ -617,7 +617,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 .masonry .item {
     display: inline-block;
     padding: 0;
-    width: 100%;
+    width: 98%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -969,9 +969,9 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	color: #fff;
 	background-color: #333;
 }
+/* END price */
 
-/* end price */
-/* blog */
+/* ===== Blog ===============================================================*/
 .blog .zero-pixel{
 	height: initial !important;
 }
@@ -1017,6 +1017,9 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 .blog ul.masonry li.item .post a{
 	color: #000;
 }
+.blog ul.masonry li.item .post a:hover{
+	color: #337ab7;
+}
 .blog .post img{
 	max-width: 100%;
 	height: auto;
@@ -1033,12 +1036,66 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 }
 .blog ul.masonry li.item .post .post-excerpt a{
 	background-image: none;
+	background-color: #8ACC43;
 	color: #fff;
 	border: 0;
 }
-/* end blog */
 
-/* blog detail */
+/* Pagination Blog */
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-text-shadow:none;
+    -moz-text-shadow:none;
+    text-shadow:none;
+}
+
+.page-numbers:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 4px 4px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.page-numbers a,
+.page-numbers span {
+    line-height: 1.6em;
+    display: block;
+    padding: 8px 12px;
+    height: auto;
+    line-height: 18px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #5cb85c;
+}
+
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: #fff;
+    background: #5cb85c;
+    text-decoration: none;
+}
+
+.page-numbers:hover { text-decoration: none }
+
+/* ===== Blog detail ======================================================= */
 #primary {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1153,7 +1210,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 #primary input[type="submit"],
 #primary button[type="submit"]{
 	display: inline-block;
-	background-color: #5cb85c;
+	background-color: #8ACC43;
 	color: #fff;
 	padding: 6px 15px;
 	margin-bottom: 0;
@@ -1203,11 +1260,11 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 }
 /* END blog detail */
 
-/* Archive Page */
+/* ===== Archive Page =============================================================== */
 .archive #primary .post-excerpt a,
 .search #primary .post-excerpt a{
 	border: 0;
 	color: #fff;
-	background-color: #5cb85c;
+	background-color: #8ACC43;
 	background-image: none;
 }

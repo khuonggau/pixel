@@ -67,8 +67,8 @@ get_header(); ?>
 				</li>
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
-
+			<?php // the_posts_navigation(); ?>
+			
 			<?php else : ?>
 
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
@@ -76,6 +76,9 @@ get_header(); ?>
 			<?php endif; ?>
 		
 		</ul>
+		<div class="pagination">
+		<?php pixel_pagination(); ?>
+		</div>
 	</div><!-- site-wrapper -->
 </div><!-- main-wrapper -->
 
