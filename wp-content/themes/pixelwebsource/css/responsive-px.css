@@ -91,20 +91,16 @@
 		color: #000;
 		margin-top: -20%;
 	}
-/* end about */
+
 /* design */
 	.design .pixel-wrapper{ background-size: cover; }
-	.design .pixel-01 {
-	  background: url(../photos/design-px-px2.jpg) 15% center no-repeat;
-	  -webkit-background-size: cover;
-	  background-size: cover;
-	}
-/* end design */
+	.design .pixel-01 { background: url(../photos/design-px-px2.jpg) 30% center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; }
+
 /* latest work */
 	.lastestwork #works-wrap #works{
 		width: 98%;
 	}
-/* end latest work */
+
 /* price */
 	.price .cover-container {
 	    width: 75%;
@@ -493,7 +489,7 @@
 		width: 100%;
 		margin: 8px 0;
 	}
-/* end latest work */
+
 /* design */
 	.design .scroll-down{
 		display: none;
@@ -502,22 +498,9 @@
 		background-color: transparent;
 		color: #fff;
 	}
-	.design .site-wrapper{
-		padding: 9% 0;
-	}
-	.design .zero-pixel .site-left h2{
-		font: 34px/34px pacificoregular;
-  		margin-bottom: 20px
-	}
-	.design .zero-pixel .site-left p{
-		font: 14px/18px ralewaymedium;
-		padding-left: 0;
-		margin: 10px 0 20px;
-	}
-	.design .zero-pixel .site-left h2{
-		margin-top: 58%;
-	}
-/* end design */
+	.design .site-wrapper{ padding: 0; }
+	.design .zero-pixel .site-left h2{ font: 60px/60px pacificoregular; margin-bottom: 20px; }
+	.design .zero-pixel .site-left p { font: 25px ralewaymedium; padding-left: 0; margin: 10px 0 20px; }
 
 /* marketing */
 	.marketing #px-nav{
@@ -1157,6 +1140,11 @@
 	.about .zero-pixel .cover-container .inner h2{  }
 	.about .pixel-02 { background: #faf8f9 url(../photos/about-px2-n.png) center 0% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
 	
+	/* design */
+	.design .pixel-wrapper { background: url(../photos/design-px-n.jpg) center center no-repeat; background-size: cover; }
+	.design .zero-pixel .site-left h2{ margin-top: 0%; }
+	.design .zero-pixel .site-right{ background: none; display: none; }
+	
 	/* marketing */
 	.marketing .pixel-03 { background: #fff url(../photos/marketing-px-px3-n.jpg) center 95% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
 
@@ -1179,9 +1167,9 @@
 	.about .pixel-03 {background-position: center 12%; webkit-background-size: 30%;background-size: 40%;}
 
 	/* design page */
-	.design .zero-pixel .site-left h2 { margin-top: 10%; }
+	.design .zero-pixel .site-left h2 { margin-top: 25%; }
 	.design .zero-pixel .site-right { background-size: 50%; }
-	.design .pixel-01 { background-position: center 12%; background-size: 55%; }
+	.design .pixel-01 { background-position: center 5%; background-size: 50%; }
 
 	/* marketing page */
 	.marketing .pixel-02 { background-position: center 100%; }
@@ -1234,18 +1222,9 @@
 	.lastestwork .site-wrapper{
 		padding: 89px 0 0 0;
 	}
-	/* end latestwork */
 
 	/* design */
-	.design .pixel-wrapper { background: url(../photos/design-px-n.jpg) center center no-repeat; background-size: cover; }
-	.design .zero-pixel .site-left h2{
-		margin-top: 15%;
-	}
-	.design .zero-pixel .site-right{
-		background: none;
-	}
-	.design .pixel-01 { background: #fff url(../photos/design-px-px2-n.jpg) center 5% no-repeat;-webkit-background-size: 65%;background-size: 65%; }
-	/* end design */
+	.design .pixel-01 { background: #fff url(../photos/design-px-px2-n.jpg) center 5% no-repeat; -webkit-background-size: 56%; background-size: 56%; }
 
 	/* marketing */
 	.marketing .pixel-02 { background: #fff url(../photos/marketing-px-px2-n.png) center 95% no-repeat; -webkit-background-size: 50%; background-size: 50%; }
@@ -1293,6 +1272,7 @@
 	}
 	/* end price */
 }
+
 @media (max-width: 667px){
 	.zero-pixel .cover-container .inner .lead{
 		padding-left: 0;
@@ -1332,7 +1312,7 @@
 		width: 180px;
 		height: 180px;
 	}
-	/* end home page */
+
 	/* about */
 	.about .zero-pixel .cover-container .inner h2{
 		font: 22px/22px ralewaymedium;
@@ -1352,10 +1332,8 @@
 	/* end about */
 
 	/* design */
-	.design .scroll-down{
-		display: none;
-	}
-	/* end design */
+	.design .scroll-down{ display: none; }
+	.design .cover-px .cover-middle h2 { margin-top: 30px; }
 
 	/* marketing */
 	.marketing .pixel-02 { background: #fff url(../photos/marketing-px-px2-n.png) center 100% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
@@ -1374,7 +1352,6 @@
 	.marketing .scroll-down {
 	  display: none;
 	}
-	/* end marketing */
 
 	/* partnership */
 	.partnership .cover-container .inner h2{
@@ -1388,12 +1365,12 @@
 	}
 	.partnership .pixel-01 { background: #fff url(../photos/partnership-px-px1.png) center 90% no-repeat; -webkit-background-size: 50%; background-size: 50%; }
 	.partnership .pixel-02 { background: #fff url(../photos/partnership-px-px2-n.jpg) center 90% no-repeat; -webkit-background-size: 80%; background-size: 80%; }
-	/* end partnership */
+
 	/* policy and term */
 	.privacy .cover-container, .term .cover-container{
 		margin-top: 81px;
 	}
-	/* end policy and term */
+
 	/* price */
 	.price .zero-pixel h1 {
 	    margin-top: 15%;
@@ -1580,11 +1557,11 @@
 /* end latest work */
 }
 @media (max-width: 571px) {
-/* px-main */
+	/* px-main */
 	.px-main .cover-px p.up{
 		margin-top: 20px;
 	}
-/* end px-main */
+
 	.zero-pixel .cover-container .inner .lead.mobile-01{
 		margin-top: 10px;
 	}
@@ -1599,7 +1576,10 @@
 	}
 	.about .pixel-01 { background: #fff url(../photos/social-about-px1-n.png) center 10% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
 	.about .pixel-03 { background: #fff url(../photos/about-px3-n.png) center 5% no-repeat;-webkit-background-size: 55%; background-size: 55%; }
-	/* end about us */
+
+	/* design */
+	.design .zero-pixel .site-left h2{ margin-top: 0%; }
+	.design .pixel-01 { background-size: 67%; }
 
 	/* marketing */
 	.marketing .cover-px .cover-middle h2{
@@ -1635,6 +1615,9 @@
 }
 
 @media (max-width: 480px) {
+	/* design */
+	.design .pixel-01 { background-size: 80%; }
+
 	/* policy and term */
 	.privacy .site-wrapper{ padding: 5%; }
 	.term .site-wrapper{ display: block; padding: 5%; }
@@ -1678,22 +1661,16 @@
 	/* end about */
 
 	/* design */
-	.design .scroll-down{
-		display: none;
-	}
-	.design .zero-pixel .site-left h2{
-		margin-top: 30%;
-	}
+	.design .scroll-down{ display: none; }
+	.design .zero-pixel .site-left h2{ margin-top: 40%; font-size: 40px;}
+	.design .zero-pixel .site-left p { font-size: 20px; }
+	/*
+	.design .zero-pixel .site-right { background: url(../photos/design-px-px1.png) center center no-repeat; -webkit-background-size: 100%; background-size: 100%; }
+	*/
+	.design .zero-pixel .site-right { display: block; }
 	.design .pixel-wrapper { background: url(../photos/design-px.jpg) center center no-repeat; background-size: cover; }
 	.design .pixel-01 { background: #fff url(../photos/design-px-px2-n.jpg) center 7% no-repeat; -webkit-background-size: 90%;background-size: 90%; }
-	.design .zero-pixel .site-right {
-	  background: url(../photos/design-px-px1.png) center center no-repeat;
-	  -webkit-background-size: 100%;
-	  background-size: 100%;
-	  height: 700px;
-	}
-	/* end design */
-
+	
 	/* marketing */
 	.marketing .pixel-02 { background: #fff url(../photos/marketing-px-px2-n.png) center 95% no-repeat; background-size: 80%; }
 	.marketing .pixel-03 {
@@ -1795,14 +1772,9 @@
 	.px-main .scroll-down{
 		display: block;
 	}
-	/* end home page */
+
 	/* about */
-	.about .zero-pixel .cover-container .inner h2 {
-		
-	}
-	.about .zero-pixel .cover-container .inner h2 span{
-		
-	}
+	.about .zero-pixel .cover-container .inner h2 span{  }
 	.about .zero-pixel .cover-container .inner h2{
 		margin-top: -36%;
 	}
@@ -1819,12 +1791,12 @@
 		-webkit-background-size: 70%;
 		background-size: 70%;
 	}
-	/* end about */
+
 	/* design */
 	.design .scroll-down{
 		display: none;
 	}
-	/* end design */
+
 	/* marketing */
 	.marketing .pixel-04 {
 	  background: #fff url(../photos/marketing-px-px4.jpg) center 55% no-repeat;
@@ -1843,7 +1815,6 @@
 	.marketing .pixel-04 .site-left h2 {
 		margin-top: 0;
 	}
-	/* end marketing */
 
 	/* partnership */
 	.partnership .cover-container .inner h2{
@@ -1859,18 +1830,16 @@
 	  -webkit-background-size: 90%;
 	  background-size: 90%;
 	}
-	/* end partnership */
 
 	/* policy and term */
 	.privacy .cover-container, .term .cover-container{ margin-top: 100px; }
-	/* end policy and term */
 
 	/* price */
 	.price .item-price ul {
 	    padding-left: 0;
 	}
-	/* end price */
 }
+
 @media (max-width: 322px) {
 	/* ===== General ===== */
 	.site-wrapper { padding: 5% 0; }
@@ -1900,41 +1869,29 @@
 		background-size: 100%;
 	}
 	.about .pixel-03 { background: #fff url(../photos/about-px3-n.png) center 5% no-repeat; -webkit-background-size: 80%; background-size: 80%; }
-	/* end about */
 
 	/* latestwork */
-	.site-wrapper {
-	  padding: 0;
-	}
-	/* latestwork */
+	.site-wrapper { padding: 0; }
 
 	/* design */
-	.design .zero-pixel{
-		height: initial !important;
-	}
-	.design .zero-pixel .site-wrapper{
-		border-bottom: none;
-	}
-	/* end design */
+	.design .zero-pixel{  }
+	.design .zero-pixel .site-wrapper{ border-bottom: none; }
+	.design .zero-pixel .site-right { background-size: 100%; background-position: center center; }
 
 	/* marketing */
 	.marketing .pixel-04 .site-left h2{
 		margin-top: 0;
 	}
 	.marketing .pixel-02 { background: #fff url(../photos/marketing-px-px2-n.png) center 95% no-repeat; -webkit-background-size: 80%; background-size: 80%; }
-	/* end marketing */
 
 	/* partnership */
 	.partnership .pixel-01 { background: #fff url(../photos/partnership-px-px1.png) center 90% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
-	/* end partnership */
 
 	/* price */
 	.price .item-price{
 		margin-bottom: 20px !important;
 	}
-	.price .item-price .title{
-		
-	}
+	.price .item-price .title{  }
 	.price .item-price .title span {
     	left: 22%;
     }
@@ -1990,7 +1947,7 @@
 	    -webkit-background-size: 85%;
 	    background-size: 85%;
 	}
-	/* end price */
+
 	/* blog */
 	.blog .item-blog{
 		margin-bottom: 20px !important;
@@ -2029,14 +1986,15 @@
 	.blog .masthead-brand{
 		background-image:url(../images/logo2.png)
 	}
-	/* end blog */
 }
+
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3) 
 { 
 	.scroll-down {
 	  bottom: 40px;
 	}
 }
+
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2)
 { 
 	.scroll-down {

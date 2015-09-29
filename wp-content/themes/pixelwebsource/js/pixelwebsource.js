@@ -38,7 +38,8 @@ jQuery(function($){
 			$('.about .pixel-01 .site-left, .about .pixel-02 .site-right, .about .pixel-03 .site-left').height(300);
 
 			/* design */
-			$('.design .zero-pixel .site-right, .design .pixel-01 .site-left').height(300);
+			$('.design .zero-pixel .site-right').height(400);
+			$('.design .pixel-01 .site-left').height(300);
 
 			/* marketing */
 			$('.marketing .pixel-03 .site-left').appendTo($('.marketing .pixel-03 .site-wrapper-inner'))
@@ -150,6 +151,7 @@ jQuery(function($){
 				$('.design #px-nav').css({'background-color':'#fff','color':'#000'})
 				$('.design .mastnav').css({'background':'#fff'})
 				$('.design .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
+
 				if($(window).scrollTop() == 0){
 					$('.design .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
 					$('.design .mastnav').css({'background':'none'})
@@ -216,7 +218,8 @@ jQuery(function($){
 			$('.about .pixel-01 .site-left, .about .pixel-02 .site-right, .about .pixel-03 .site-left').height(300);
 
 			/* design */
-			$('.design .zero-pixel .site-right, .design .pixel-01 .site-left').height(300);
+			$('.design .zero-pixel .site-right').height(400);
+			$('.design .pixel-01 .site-left').height(300);
 
 			/* marketing */
 			$('.marketing .pixel-03 .site-left').appendTo($('.marketing .pixel-03 .site-wrapper-inner'));
@@ -234,7 +237,7 @@ jQuery(function($){
 			$('.about .pixel-01 .site-left, .about .pixel-02 .site-right, .about .pixel-03 .site-left').height(1);
 
 			/* design */
-			$('.design .zero-pixel .site-right, .design .pixel-01 .site-left').height($(window).height());
+			// $('.design .zero-pixel .site-right, .design .pixel-01 .site-left').height( $(window).height() );
 
 			/* marketing */
 			$('.marketing .pixel-03 .site-right').appendTo($('.marketing .pixel-03 .site-wrapper-inner'));

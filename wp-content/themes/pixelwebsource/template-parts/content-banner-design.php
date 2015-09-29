@@ -22,7 +22,7 @@ $banner_button_url		= get_field('banner_button_url');
 	            </p>
 			</div>
 			<div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-0 site-right">
-
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/photos/design-px-px1.png" alt="">
 			</div>
         </div>
   	</div><!-- site-wrapper-inner -->

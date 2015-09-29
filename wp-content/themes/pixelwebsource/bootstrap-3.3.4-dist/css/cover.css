@@ -142,6 +142,7 @@ body {
     position: fixed;
     bottom: 0;
   }
+  .design .site-wrapper-inner { padding-top: 35px; }
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
