@@ -21,14 +21,14 @@
         	<a href="http://www.pixelwebsource.com/" class="logo"></a>
         	<div class="field-of-business">
 	        	<ul class="ul-01">
-	        	  	<li><a href="http://www.pixelwebsource.com/san-jose-web-design/">Web Design</a></li>
-	        	  	<li><a href="http://www.pixelwebsource.com/san-jose-internet-marketing/">marketing</a></li>
-	        	  	<li><a href="http://www.pixelwebsource.com/web-design-contractors-san-jose/">partnership</a></li>
+	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/san-jose-web-design/">Web Design</a></li>
+	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/san-jose-internet-marketing/">marketing</a></li>
+	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/web-design-contractors-san-jose/">partnership</a></li>
 	        	</ul>
 	        	<ul class="ul-02">
-	        		<li><a href="http://www.pixelwebsource.com/best-web-designs-in-san-jose/">Latest work</a></li>
-	        	  	<li><a href="http://www.pixelwebsource.com/affordable-web-designs-in-san-jose/">Pricing</a></li>
-	        	  	<li><a href="http://www.pixelwebsource.com/contact-us/">Contact us</a></li>
+	        		<li><a href="<?php bloginfo( 'url' ); ?>/best-web-designs-in-san-jose/">Latest work</a></li>
+	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/affordable-web-designs-in-san-jose/">Pricing</a></li>
+	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/contact-us/">Contact us</a></li>
 	        	</ul>
 	        </div><!-- field-of-business -->
 	        <nav class="footer-social clearfix">
@@ -42,7 +42,7 @@
 
 	        <div class="bd-footer">
 	        	<p>Pixelwebsource is a professional web design and web development company in California.<br> 97 S Second St #100,  San Jose CA 95113<a href="mailto:info@pixelwebsource.com"> info@pixelwebsource.com</a> 408 230 5555</p>
-				<a class="pp-px" href="http://www.pixelwebsource.com/privacy-policy/">Privacy Policy</a><a href="http://www.pixelwebsource.com/terms-and-conditions/">Terms and Conditions</a>
+				<a class="pp-px" href="<?php bloginfo( 'url' ); ?>/privacy-policy/">Privacy Policy</a><a href="<?php bloginfo( 'url' ); ?>/terms-and-conditions/">Terms and Conditions</a>
 			</div><!-- bd-footer -->
         </div><!-- inner -->
 	</div><!-- mastfoot -->
