@@ -353,10 +353,15 @@ jQuery(function($){
 		if(!$('#contact-form').hasClass('active')){
 			$('#contact-form').addClass('active')
 			$('.zero-pixel').addClass('ct-height')
+
+			$('.contact .zero-pixel').css('height', 'auto !important');
+			$('.contact .zero-pixel .site-wrapper-inner').css('padding-top', '130px');
 		}
 		else{
 			$('#contact-form').removeClass('active')
 			$('.zero-pixel').removeClass('ct-height')
+
+			$('.contact .zero-pixel .site-wrapper-inner').css('padding-top', '0');
 		}
 		$('html,body').animate({scrollTop:$('#show-contact-form').offset().top - 10},'slow')
 	})
