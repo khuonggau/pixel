@@ -25,7 +25,7 @@
 }
 .cover-px ul li{
 	background-image: url(../images/list.jpg);
-	background-position: left 5px;
+	background-position: left 3px;
 	background-repeat: no-repeat;
 	padding-left: 40px;
 	font: 20px/30px ralewayregular;
@@ -170,8 +170,13 @@ _:-ms-fullscreen, :root .about .cover-container .inner h2 {
 .marketing .masthead-brand{
 	  background-image: url(../images/logo2-w.png);
 }
-.marketing .pixel-01,.design .pixel-02{
+.marketing .pixel-01, .design .pixel-02{
 	background: #fff url();
+	height: auto !important;
+}
+.marketing .pixel-02,
+.marketing .pixel-03,
+.marketing .pixel-04 {
 	height: auto !important;
 }
 .marketing .cover-px .cover-middle h2{
@@ -182,7 +187,15 @@ _:-ms-fullscreen, :root .about .cover-container .inner h2 {
 }
 .marketing .site-wrapper{
 	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
   	box-shadow: none;
+}
+.marketing .pixel-02 .site-wrapper,
+.marketing .pixel-03 .site-wrapper{
+	padding: 7% 0;
+}
+.marketing .pixel-04 .site-wrapper{
+	padding: 7% 0 0;
 }
 .marketing .pixel-02{
 	background: #fff url() 0 0 no-repeat;
@@ -200,14 +213,12 @@ _:-ms-fullscreen, :root .about .cover-container .inner h2 {
   	background-size: 40%;
 }
 .marketing .pixel-04{
-	background: #fff url(../photos/marketing-px-px4.jpg) 65% 5% no-repeat;
+	background: #fff url(../photos/marketing-px-px4.jpg) 65% 20% no-repeat;
 	-webkit-background-size: 25%;
 	background-size: 25%;
 }
 .marketing .pixel-04 .cover-middle{
-	padding-top: 6%;
-}
-.marketing .pixel-wrapper{
+	padding-top: 0;
 }
 .design .zero-pixel .site-left p,
 .marketing .zero-pixel .site-left p {

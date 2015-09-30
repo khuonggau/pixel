@@ -385,9 +385,9 @@
 		display: none;
 	}
 	/* End Spending NAVIGATION */
-	.site-wrapper{
-		padding: 11% 0 5%; /* custom K */
-	}
+
+	.site-wrapper{ padding: 11% 0 5%; }
+	.about .site-wrapper{ padding: 2% 0; }
 	.site-left, .site-right{
 		padding: 0 3%;
 	}
@@ -728,10 +728,10 @@
 	.about .pixel-02 { background: #faf8f9 url(../photos/about-px2-n.png) 0% 50% no-repeat;-webkit-background-size: 50%;background-size: 50%; }
 
 	/* marketing page */
-	.marketing .pixel-03 { background-position: 95% center; background-size: 42%; }
+	.marketing .pixel-03 { background-position: 5% center; background-size: 40%; }
 
 	/* partnership */
-	.partnership .pixel-01 { background-position: 80% 40%; background-size: 30%; }
+	.partnership .pixel-01 { background-position: 15% center; background-size: 35%; }
 }
 
 @media (max-width: 771px) {
@@ -949,6 +949,7 @@
 	.hide{
 		display: none !important; 
 	}
+
 /* contact */
 	.contact .zero-pixel{
 		height: initial !important;
@@ -971,7 +972,7 @@
 		top: 55px;
 		width: 122px;
 	}
-/* end contact */
+
 /* latest work */
 	#single-work #work-images .work-image {
 	  margin-bottom: 20px;
@@ -1000,14 +1001,12 @@
 		background: none;
 		color: #fff;
 	}
-/* end design */
 
 /* marketing */
 	.marketing .pixel-wrapper { background: url(../photos/marketing-px.jpg) 86% center no-repeat; background-size: cover; }
 	.marketing .pixel-02 { background: #fff url(../photos/marketing-px-px2-n.png) 95% 55% no-repeat; background-size: 45%; }
-	.marketing .pixel-03 { background: #fff url(../photos/marketing-px-px3-n.jpg) 100% center no-repeat; -webkit-background-size: 45%; background-size: 45%; }
-	.marketing .pixel-04 { background: #fff url(../photos/marketing-px-px4.jpg) 50% 45% no-repeat; -webkit-background-size: 20%; background-size: 20%; }
-/* end marketing */
+	.marketing .pixel-03 { background: #fff url(../photos/marketing-px-px3-n.jpg) 0 center no-repeat; -webkit-background-size: 40%; background-size: 40%; }
+	.marketing .pixel-04 { background: #fff url(../photos/marketing-px-px4.jpg) 80% 35% no-repeat; -webkit-background-size: 35%; background-size: 35%; }
 
 /* partnership */
 	.partnership .pixel-02 {
@@ -1018,7 +1017,7 @@
 	.partnership .cover-container .inner h2 {
 		font: 72px/72px pacificoregular;
 	}
-/* end partnership */
+
 /* price */
 	.price .zero-pixel {
 	    background: url(../images/price/bg_top.jpg) 60% center no-repeat;
@@ -1087,7 +1086,7 @@
 	.price .pixel-01 .cover-container .inner h2, .pixel-02 .cover-container .inner h2, .pixel-03 .cover-container .inner h2{
 		margin-top: 0;
 	}
-/* end price */
+
 /* blog */
 	.blog .item-blog{
 		margin-bottom: 20px !important;
@@ -1122,6 +1121,7 @@
 	}
 /* end blog */
 }
+
 @media (min-width: 768px) {
 	.masthead-nav {
 	  float: none;
@@ -1131,10 +1131,9 @@
 	}
 
 	/* marketing */
-	.marketing .pixel-02 h2,.marketing .pixel-03 h2,.marketing .pixel-04 .site-left h2{
-		margin-top: -10%;
-	}
+	.marketing .pixel-02 h2, .marketing .pixel-03 h2, .marketing .pixel-04 .site-left h2{ margin-top: 0; }
 }
+
 @media (max-width: 767px) {
 	/* about */
 	.about .zero-pixel .cover-container .inner h2{  }
@@ -1146,7 +1145,11 @@
 	.design .zero-pixel .site-right{ background: none; display: none; }
 	
 	/* marketing */
+	.marketing .zero-pixel .site-wrapper-inner { vertical-align: middle; }
+	.marketing .pixel-01 .site-wrapper { padding: 5% 0; }
 	.marketing .pixel-03 { background: #fff url(../photos/marketing-px-px3-n.jpg) center 95% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
+	.marketing .pixel-04 { background-position: center 55%; -webkit-background-size: 25%; background-size: 25%; }
+	.marketing .pixel-04 .cover-middle { padding-top: 100px; }
 
 	/* partnership */
 	.partnership .pixel-01 { background: #fff url(../photos/partnership-px-px1.png) center 90% no-repeat; -webkit-background-size: 40%; background-size: 40%; }
@@ -1202,21 +1205,13 @@
 	.px-main .cover-px p.up{
 		margin-top: 90px;
 	}
-	/* end home page */
 
 	/* about */
-	.about .zero-pixel .cover-container .inner h2 {
-		font: 22px/22px ralewaymedium;
-		margin: 0px 0 20px;
-		margin-top: -10%;
-	}
-	.about .zero-pixel .cover-container .inner h2 span{
-		font: 22px/22px ralewaybold;
-	}
+	.about .zero-pixel .cover-container .inner h2 { font: 32px/32px ralewaymedium; margin: 0px 0 20px; margin-top: -10%; }
+	.about .zero-pixel .cover-container .inner h2 span{ font: 32px/32px ralewaybold; }
 	.about .pixel-01 { background: #fff url(../photos/social-about-px1-n.png) center 12% no-repeat; -webkit-background-size: 45%; background-size: 45%; }
 	.about .pixel-02 { background: #faf8f9 url(../photos/about-px2-n.png) center 5% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
 	.about .pixel-03 { background: #fff url(../photos/about-px3-n.png) center 5% no-repeat; -webkit-background-size: 45%; background-size: 45%; }
-	/* end about */
 
 	/* latestwork */
 	.lastestwork .site-wrapper{
@@ -1281,9 +1276,7 @@
 	  margin-top: 0;
 	}
 	
-	.site-wrapper{
-		padding: 5%;
-	}
+	.site-wrapper{ padding: 5%; }
 	.cover-px .cover-middle{
 		padding: 0;
 	}
@@ -1329,13 +1322,13 @@
 		padding: 10% 0;
 	}
 	.about .pixel-03 { background: #fff url(../photos/about-px3-n.png) center 10% no-repeat;-webkit-background-size: 40%;background-size: 40%; }
-	/* end about */
 
 	/* design */
 	.design .scroll-down{ display: none; }
 	.design .cover-px .cover-middle h2 { margin-top: 30px; }
 
 	/* marketing */
+	.marketing .zero-pixel .site-wrapper { padding: 20% 5% 5%; }
 	.marketing .pixel-02 { background: #fff url(../photos/marketing-px-px2-n.png) center 100% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
 	.marketing .pixel-03 { background: #fff url(../photos/marketing-px-px3-n.jpg) center 95% no-repeat; -webkit-background-size: 70%; background-size: 70%; }
 	.marketing .pixel-04 {
@@ -1561,19 +1554,13 @@
 	.px-main .cover-px p.up{
 		margin-top: 20px;
 	}
-
 	.zero-pixel .cover-container .inner .lead.mobile-01{
 		margin-top: 10px;
 	}
+
 	/* about us */
-	.about .zero-pixel .cover-container .inner h2{
-		font: 18px/22px ralewaymedium;
-		margin: 0px 0 20px;
-		margin-top: -10%;
-	}
-	.about .zero-pixel .cover-container .inner h2 span{
-		font: 18px/22px ralewaybold;
-	}
+	.about .zero-pixel .cover-container .inner h2{ font: 25px/25px ralewaymedium; margin: 0px 0 20px; margin-top: -10%; }
+	.about .zero-pixel .cover-container .inner h2 span{ font: 25px/25px ralewaybold; }
 	.about .pixel-01 { background: #fff url(../photos/social-about-px1-n.png) center 10% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
 	.about .pixel-03 { background: #fff url(../photos/about-px3-n.png) center 5% no-repeat;-webkit-background-size: 55%; background-size: 55%; }
 
@@ -1590,7 +1577,6 @@
 		-webkit-background-size: 30%;
 		background-size: 30%;
 	}
-	/* end marketing */
 
 	/* latest work page */
 	.masonry { -moz-column-count: 1; -webkit-column-count: 1; column-count: 1; }
@@ -1809,9 +1795,7 @@
 	  background-size: 80%;
 	}
 	.marketing .pixel-03 { background: #fff url(../photos/marketing-px-px3-n.jpg) center 85% no-repeat; -webkit-background-size: 90%; background-size: 90%; }
-	.marketing .pixel-02 .site-wrapper, .marketing .pixel-03 .site-wrapper, .marketing .pixel-04 .site-wrapper{
-		padding: 2% 5%;
-	}
+	.marketing .pixel-02 .site-wrapper, .marketing .pixel-03 .site-wrapper, .marketing .pixel-04 .site-wrapper{ padding: 5%; }
 	.marketing .pixel-04 .site-left h2 {
 		margin-top: 0;
 	}

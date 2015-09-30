@@ -1091,6 +1091,9 @@ h1 a:hover{
 	padding: 0 !important;
 	position: relative;
 }
+.px-main .cover-px .inner{
+	margin-top: 80px;
+}
 .cover-px h2{
 	margin: 0;
 	text-shadow: none;

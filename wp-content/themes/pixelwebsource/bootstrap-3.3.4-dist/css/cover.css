@@ -48,6 +48,9 @@ body {
   display: table-cell;
   vertical-align: top;
 }
+.about .site-wrapper-inner {
+  padding: 35px 0;
+}
 .cover-container {
   margin-right: auto;
   margin-left: auto;
