@@ -1064,6 +1064,11 @@ h1 a:hover{
 /* end header */
 
 /* content */
+.px-main .pixel-01,
+.px-main .pixel-02,
+.px-main .pixel-03{
+	min-height: 600px;
+}
 .pixel-01{
 	background: #1398e4 url(images/blue-bg.png) repeat;
 }
