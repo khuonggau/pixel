@@ -209,14 +209,15 @@ _:-ms-fullscreen, :root .about .cover-container .inner h2 {
 }
 .marketing .pixel-wrapper{
 }
-.design .zero-pixel .site-left p,.marketing .zero-pixel .site-left p {
+.design .zero-pixel .site-left p,
+.marketing .zero-pixel .site-left p {
 	margin-top: 20px;
 	font: 35px/40px ralewayregular;
 }
 .marketing .zero-pixel .site-left p {
 	margin-top: 26px;
 }
-/* end marketing */
+
 /* design -------------------------------------------------------------------------------------------------*/
 .design .masthead-brand{
 	  background-image: url(../images/logo2-w.png);
@@ -248,6 +249,7 @@ _:-ms-fullscreen, :root .about .cover-container .inner h2 {
 	background: url(../photos/design-px-px2.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	height: auto !important;
 }
 .design .pixel-01 h2{
 	margin-top: -10px;

@@ -20,12 +20,19 @@ jQuery(function($){
 	$('.bullet-wrapper ul li:nth-child(6)').click(function(){
 		$('html,body').animate({scrollTop:$('.pixel-05').offset().top},'slow')
 	})
+
 	if($(window).width() <= 414){
 		$('.px-main .cover-heading span').css({'width':'100%','display':'block'})
 	}
 	else{
 		$('.px-main .cover-heading span').css({'width':'auto','display':'initial'})
 	}
+
+	if($(window).height() < 600){
+		/* Design Page */
+		$('.design .zero-pixel').height(600);
+	}
+
 	$('.px-main .masthead-brand').click(function(e){
 		e.preventDefault()
 		$('html,body').animate({scrollTop:$('.zero-pixel').offset().top},'slow')
@@ -158,13 +165,19 @@ jQuery(function($){
 					$('.design #px-nav').css({'background-color':'transparent','color':'#fff'})
 				}
 			}
+
 			if($(window).width() < 669){
 				$('.blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'});
 				$('.blog .mastnav').css({'background-color':'#fff'});
 				$('.blog .px-nav').css({'color':'000','background-color': '#fff'});
 				$('.single-post .blog .masthead-brand, .archive .blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)'});
 			}
-		}					
+		}
+
+		if($(window).height() < 600){
+			/* Design Page */
+			$('.design .zero-pixel').height(600);
+		}
 	})
 
 	$('#px-nav').click(function(e){
@@ -236,7 +249,7 @@ jQuery(function($){
 			$('.about .pixel-02 .site-right').appendTo($('.about .pixel-02 .site-wrapper-inner'));
 			$('.about .pixel-01 .site-left, .about .pixel-02 .site-right, .about .pixel-03 .site-left').height(1);
 
-			/* design */
+			/* Design Page */
 			// $('.design .zero-pixel .site-right, .design .pixel-01 .site-left').height( $(window).height() );
 
 			/* marketing */
@@ -249,6 +262,11 @@ jQuery(function($){
 
 			/* Pricing Page */
 			$('.price .zero-pixel .site-right').appendTo($('.price .zero-pixel .site-wrapper-inner'));
+		}
+
+		if($(window).height() < 600){
+			/* Design Page */
+			$('.design .zero-pixel').height(600);
 		}
 		/* End custom K */
 	}); // window.resize()
