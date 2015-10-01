@@ -1064,6 +1064,9 @@ h1 a:hover{
 /* end header */
 
 /* content */
+.px-main .zero-pixel {
+	min-height: 550px;
+}
 .px-main .pixel-01,
 .px-main .pixel-02,
 .px-main .pixel-03{

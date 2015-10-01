@@ -120,6 +120,9 @@ _:-ms-fullscreen, :root .zero-pixel	.cover-px p span{
 	color: #000;
 	text-shadow: none;
 }
+.about .zero-pixel{
+	min-height: 500px;
+}
 .about .pixel-wrapper{
 }
 .about .pixel-02{
@@ -644,6 +647,9 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 /* end sub-work ------------------------------------------------------------------------------------------------- */
 /* end latestwork */
 /* partnership -------------------------------------------------------------------------------------------------*/
+.partnership .zero-pixel{
+	min-height: 500px;
+}
 .partnership .pixel-01,.partnership .pixel-02{
 	height: initial !important;
 }

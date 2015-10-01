@@ -1307,11 +1307,7 @@
 	}
 
 	/* about */
-	.about .zero-pixel .cover-container .inner h2{
-		font: 22px/22px ralewaymedium;
-		margin: 0px 0 20px;
-		margin-top: -10%;
-	}
+	.about .zero-pixel .cover-container .inner h2{ font: 22px/22px ralewaymedium; margin: 0px 0 20px; margin-top: -20%; }
 	.about .zero-pixel .cover-container .inner h2 span {
 		font: 22px/22px ralewaybold;
 	}
@@ -1559,7 +1555,7 @@
 	}
 
 	/* about us */
-	.about .zero-pixel .cover-container .inner h2{ font: 25px/25px ralewaymedium; margin: 0px 0 20px; margin-top: -10%; }
+	.about .zero-pixel .cover-container .inner h2{ font: 25px/25px ralewaymedium; margin: 0px 0 20px; margin-top: -20%; }
 	.about .zero-pixel .cover-container .inner h2 span{ font: 25px/25px ralewaybold; }
 	.about .pixel-01 { background: #fff url(../photos/social-about-px1-n.png) center 10% no-repeat; -webkit-background-size: 60%; background-size: 60%; }
 	.about .pixel-03 { background: #fff url(../photos/about-px3-n.png) center 5% no-repeat;-webkit-background-size: 55%; background-size: 55%; }
