@@ -173,6 +173,9 @@ _:-ms-fullscreen, :root .about .cover-container .inner h2 {
 .marketing .masthead-brand{
 	  background-image: url(../images/logo2-w.png);
 }
+.marketing .zero-pixel {
+	min-height: 350px;
+}
 .marketing .pixel-01, .design .pixel-02{
 	background: #fff url();
 	height: auto !important;

@@ -150,6 +150,12 @@ body {
   .site-wrapper-inner {
     vertical-align: middle;
   }
+
+  .px-main .pixel-01 .site-wrapper-inner,
+  .px-main .pixel-02 .site-wrapper-inner,
+  .px-main .pixel-03 .site-wrapper-inner {
+    vertical-align: top;
+  }
   /* Handle the widths */
   .masthead,
   .mastfoot,

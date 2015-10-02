@@ -2,24 +2,25 @@ jQuery(function($){
 	//var blockScroll = $('#main-wrapper').blockScroll();
 	$('section').height($(window).height())
 
-	$('.bullet-wrapper ul li:nth-child(1)').click(function(){
-		$('html,body').animate({scrollTop:$('.zero-pixel').offset().top},'slow')
-	})
-	$('.bullet-wrapper ul li:nth-child(2)').click(function(){
-		$('html,body').animate({scrollTop:$('.pixel-01').offset().top},'slow')
-	})
-	$('.bullet-wrapper ul li:nth-child(3)').click(function(){
-		$('html,body').animate({scrollTop:$('.pixel-02').offset().top},'slow')
-	})
-	$('.bullet-wrapper ul li:nth-child(4)').click(function(){
-		$('html,body').animate({scrollTop:$('.pixel-03').offset().top},'slow')
-	})
-	$('.bullet-wrapper ul li:nth-child(5)').click(function(){
-		$('html,body').animate({scrollTop:$('.pixel-04').offset().top},'slow')
-	})
-	$('.bullet-wrapper ul li:nth-child(6)').click(function(){
-		$('html,body').animate({scrollTop:$('.pixel-05').offset().top},'slow')
-	})
+	$('.bullet-wrapper ul li:nth-child(1)').bind('touchstart click',function(){
+		$('html,body').animate({scrollTop:$('.zero-pixel').offset().top},'slow');
+	});
+	$('.bullet-wrapper ul li:nth-child(2)').bind('touchstart click',function(){
+		$('html,body').animate({scrollTop:$('.pixel-01').offset().top},'slow');
+	});
+	$('.bullet-wrapper ul li:nth-child(3)').bind('touchstart click',function(){
+		$('html,body').animate({scrollTop:$('.pixel-02').offset().top},'slow');
+	});
+	$('.bullet-wrapper ul li:nth-child(4)').bind('touchstart click',function(){
+		$('html,body').animate({scrollTop:$('.pixel-03').offset().top},'slow');
+	});
+	$('.bullet-wrapper ul li:nth-child(5)').bind('touchstart click',function(){
+		$('html,body').animate({scrollTop:$('.pixel-04').offset().top},'slow');
+	});
+	$('.bullet-wrapper ul li:nth-child(6)').bind('touchstart click',function(){
+		$('html,body').animate({scrollTop:$('.pixel-05').offset().top},'slow');
+	});
+
 
 	if($(window).width() <= 414){
 		$('.px-main .cover-heading span').css({'width':'100%','display':'block'})
@@ -30,7 +31,7 @@ jQuery(function($){
 
 	if($(window).height() < 600){
 		/* Design Page */
-		$('.design .zero-pixel').height(600);
+		$('.design .zero-pixel').css({'min-height':'700'});
 	}
 
 	$('.px-main .masthead-brand').click(function(e){
@@ -120,6 +121,16 @@ jQuery(function($){
 			$('.thankyou .mastnav').css({'background-color':'transparent'})
 
 			if($(window).width() < 669){
+				/* ===== Menu For Home Page ===== */
+				$('.px-main .mastnav').css({'background':'none'});
+				$('.px-main #px-nav').css({'color':'#fff','background':'none'});
+				$('.px-main .masthead-brand').css({'background-image':'url(wp-content/themes/pixelwebsource/images/logo2-w.png)','background-position':'0 0'})
+
+				/* ===== Home Page ===== */
+				$('.px-main .cover-px .inner').css({'margin-top':'0'});
+
+
+				/* ===== Blog ===== */
 				$('.blog .masthead-brand').css({'background-image':'url(../images/logo2.png)'})
 				$('.blog .mastnav').css({'background-color':'#fff'})
 				$('.blog .px-nav').css({'color':'000','background-color': '#fff'})
@@ -176,7 +187,7 @@ jQuery(function($){
 
 		if($(window).height() < 600){
 			/* Design Page */
-			$('.design .zero-pixel').height(600);
+			$('.design .zero-pixel').css({'min-height':'700'});
 		}
 	})
 
@@ -250,7 +261,7 @@ jQuery(function($){
 			$('.about .pixel-01 .site-left, .about .pixel-02 .site-right, .about .pixel-03 .site-left').height(1);
 
 			/* Design Page */
-			// $('.design .zero-pixel .site-right, .design .pixel-01 .site-left').height( $(window).height() );
+			$('.design .zero-pixel').height( $(window).height() );
 
 			/* marketing */
 			$('.marketing .pixel-03 .site-right').appendTo($('.marketing .pixel-03 .site-wrapper-inner'));
@@ -266,7 +277,7 @@ jQuery(function($){
 
 		if($(window).height() < 600){
 			/* Design Page */
-			$('.design .zero-pixel').height(600);
+			$('.design .zero-pixel').css({'min-height':'700'});
 		}
 		/* End custom K */
 	}); // window.resize()
@@ -403,60 +414,4 @@ jQuery(function($){
     else {
         url = window.location.protocol + '//' + window.location.hostname + ':' + port;
     }
-
-    //validate contact form and sent email
-    /*
-    if($('form.rq-form').length>0) {
-        $('form.rq-form').each(function(i){
-            var $this=$(this);
-            var validator = $("form.rq-form:eq("+i+")").validate({
-                rules: {
-                    full_name:{
-                        required: true
-                    },
-                    phone:{
-                        required: true
-                    },
-                    email:{
-                        required: true,
-                        email:true
-                    },
-                    company:{
-                        required: true
-                    },
-                    description:{
-                        required: true
-                    }
-                }
-                submitHandler: function (form) {
-                    var fullname=$this.find('input[name=full_name]').val();
-                    var email=$this.find('input[name=email]').val();
-                    var phone=$this.find('input[name=phone]').val();
-                    var company=$this.find('input[name=company]').val();
-                    var description=$this.find('textarea[name=description]').val();
-                    //send mail
-                    $.ajax({
-                        url:url+'/contact.php',
-                        type:'post',
-                        data:{fullname:fullname,email:email,phone:phone,company:company,description:description},
-                        dataType  : 'json',
-                        beforeSend: function () {
-                            $this.find('input[type=submit]').val('Loading...');
-                            $this.find('input[type=submit]').attr('disabled','disabled');
-                        },
-                        success:function(d){
-                            $this.find('input[type=submit]').val('Send');
-                            $this.find('input[type=submit]').removeAttr('disabled');
-                            window.location=url+'/thank-you';
-                        },
-						error: function (request, status, error) {
-							alert(request.responseText);
-						}
-                    });
-                    return false;
-                }
-            });
-        });
-    } // End if
-    */
 });

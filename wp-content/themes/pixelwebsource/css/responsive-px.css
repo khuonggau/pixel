@@ -38,18 +38,10 @@
 }
 
 @media only screen and (min-width: 1380px){
-	.price .item-price:nth-child(3) .title span {
-	    /*left: 26%;*/
-	    vertical-align: top;
-	}
-	.price .item-price:nth-child(2) .title span {
-	    /*left: 35%;*/
-	    vertical-align: top;
-	}
-	.price .item-price:nth-child(1) .title span {
-	    /*left: 35%;*/
-	    vertical-align: top;
-	}
+	/* Price Page */
+	.price .item-price:nth-child(3) .title span { vertical-align: top; }
+	.price .item-price:nth-child(2) .title span { vertical-align: top; }
+	.price .item-price:nth-child(1) .title span { vertical-align: top; }
 }
 
 @media only screen and (max-width: 1380px){
@@ -210,13 +202,9 @@
 	}
 /* end blog */
 }
-@media (max-width: 1366px) {
-	/* design */
-	
-	/* end design */
-	/* marketing */
-
-	/* end marketing */
+@media (min-width: 1200px) {
+	/* Design Page */
+	.design .zero-pixel{ min-height: 580px; }
 }
 
 @media (max-width: 1200px) {
@@ -246,7 +234,7 @@
 	.moveRightToLeft{
 		margin-top: 0;
 	}
-	/* end animation */
+
 	/* request form */
 	#request_form{
 		display: none;
@@ -370,7 +358,7 @@
 		text-shadow: none;
 		height: auto;
 	}
-	.open-sub-menu .sub-menu{
+	.open-subnav .sub-menu{
 		background-color: #fff;
 		width: 100%;
 		text-align: center;
@@ -387,10 +375,10 @@
 	/* End Spending NAVIGATION */
 
 	.site-wrapper{ padding: 11% 0 5%; }
+	.px-main .pixel-01 .site-wrapper, .px-main .pixel-02 .site-wrapper { padding: 5% 0; }
+	.px-main .pixel-03 .site-wrapper{ padding: 4% 0; }
 	.about .site-wrapper{ padding: 2% 0; }
-	.site-left, .site-right{
-		padding: 0 3%;
-	}
+	.site-left, .site-right{ padding: 0 3%; }
 	.masthead-brand, .mastfoot .inner h1{
 		width: 200px;
 		height: 50px;
@@ -414,6 +402,7 @@
 		font: 72px/72px pacificoregular;
 		margin-bottom: 24px;
 	}
+	.px-main .pixel-03 .inner { margin-top: 0; }
 	.px-main .zero-pixel .pending-px{
 		padding-bottom: 0;
 	}
@@ -775,7 +764,7 @@
 		font: 18px/34px ralewaymedium;
 	}
 	.masthead-nav > li:hover .sub-menu{
-		display: none;	
+		display: none;
 	}
 	.masthead-nav > li + li{
 		margin-left: 0;
@@ -1123,13 +1112,12 @@
 }
 
 @media (min-width: 768px) {
-	.masthead-nav {
-	  float: none;
-	}
-	.sub-menu li a:hover{
-		color: #8acc43;
-	}
-
+	.masthead-nav { float: none; }
+	.sub-menu li a:hover{ color: #8acc43; }
+	
+	/* Design Page */
+	.design .zero-pixel{ min-height: 400px; }
+	
 	/* marketing */
 	.marketing .pixel-02 h2, .marketing .pixel-03 h2, .marketing .pixel-04 .site-left h2{ margin-top: 0; }
 }
@@ -1294,17 +1282,17 @@
 	.cover-px p.summary{
 		font: 20px/30px ralewayregular;
 	}
+
 	/* home page */
-	.px-main .zero-pixel .cover-container .inner .lead.mobile-01{
-		margin-top: -10px;
-	}
-	.px-main .cover-px p.up{
-		margin-top: 90px;
-	}
-	.pixel-03 .animated img{
-		width: 180px;
-		height: 180px;
-	}
+	.px-main .cover-container .inner .cover-heading {padding-top: 0;}
+	.px-main .zero-pixel .cover-container .inner .lead.mobile-01 { margin-top: -10px; }
+	.px-main .zero-pixel .cover-container .inner .lead.mobile-02 { margin-bottom: 10px; }
+	.px-main .cover-px .inner { margin-top: 70px; }
+	.px-main .cover-px p.up{ margin-top: 0; }
+	
+	.scroll-down { bottom: 30px; }
+
+	.pixel-03 .animated img{ width: 180px; height: 180px; }
 
 	/* about */
 	.about .zero-pixel .cover-container .inner h2{ font: 22px/22px ralewaymedium; margin: 0px 0 20px; margin-top: -20%; }
@@ -1644,8 +1632,12 @@
 
 	/* design */
 	.design .scroll-down{ display: none; }
-	.design .zero-pixel .site-left h2{ margin-top: 40%; font-size: 40px;}
+	.design .zero-pixel { overflow: hidden; }
+	.design .zero-pixel .site-left h2 { margin: 30% 0 5px; font-size: 35px;}
+	.design .zero-pixel .site-left h1 { margin: 0; }
 	.design .zero-pixel .site-left p { font-size: 20px; }
+	.design .zero-pixel .btn-pixel { padding: 10px 20px; }
+	
 	/*
 	.design .zero-pixel .site-right { background: url(../photos/design-px-px1.png) center center no-repeat; -webkit-background-size: 100%; background-size: 100%; }
 	*/
