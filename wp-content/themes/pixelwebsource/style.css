@@ -936,6 +936,9 @@ _:-ms-fullscreen, :root .form-wrap .rq-form .input-wrap input{
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
 }
+.price .scroll-down a {
+	background: url(images/scroll-down-dark.png) 0 0 no-repeat;
+}
 /*
 ==============================================
 floating

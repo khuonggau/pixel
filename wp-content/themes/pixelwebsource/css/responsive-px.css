@@ -39,9 +39,9 @@
 
 @media only screen and (min-width: 1380px){
 	/* Price Page */
-	.price .item-price:nth-child(3) .title span { vertical-align: top; }
+	.price .item-price:nth-child(3) .title span.little { vertical-align: top; }
 	.price .item-price:nth-child(2) .title span { vertical-align: top; }
-	.price .item-price:nth-child(1) .title span { vertical-align: top; }
+	.price .item-price:nth-child(1) .title span.little { vertical-align: top; }
 }
 
 @media only screen and (max-width: 1380px){
@@ -100,7 +100,7 @@
 	    position: relative;
 	}
 	.price .scroll-down{
-		display: none;
+		/*display: none;*/
 	}
 	.price .item-price h2 {
 	    font: 24px/30px ralewaysemibold;
@@ -144,18 +144,9 @@
 	    position: absolute;
 	    width: 100%;
 	}
-	.price .item-price:nth-child(3) .title span {
-	    /*left: 26%;*/
-	    vertical-align: top;
-	}
-	.price .item-price:nth-child(2) .title span {
-	    /*left: 35%;*/
-	    vertical-align: top;
-	}
-	.price .item-price:nth-child(1) .title span {
-	    /*left: 35%;*/
-	    vertical-align: top;
-	}
+	.price .item-price:nth-child(3) .title span.little { vertical-align: top; }
+	.price .item-price:nth-child(2) .title span { vertical-align: top; }
+	.price .item-price:nth-child(1) .title span.little { vertical-align: top; }
 	.price .item-price ul li {
 		background-position: 10% center;
 	}
@@ -597,14 +588,8 @@
 	.price .item-price h2 {
     	font: 20px/30px ralewaysemibold; 
     }
-    .price .item-price ul li {
-	    font: 14px/18px ralewaymedium;
-	    text-indent: 20%;
-	    padding: 14px;
-	}
-	.price .item-price:nth-child(3) ul li {
-	    padding: 10px 0;
-	}
+    .price .item-price ul li { font: 14px/18px ralewaymedium; text-indent: 20%; padding: 10px; }
+	.price .item-price:nth-child(1) ul li, .price .item-price:nth-child(3) ul li { padding: 10px 0; }
 	.price .item-price:nth-child(3) .title span {
 	    left: 26%;
 	}
