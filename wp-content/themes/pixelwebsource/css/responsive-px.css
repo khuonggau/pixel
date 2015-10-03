@@ -1,40 +1,21 @@
 
 @media only screen and (max-width: 1500px) {
 	/* home */
-	.px-main .pixel-03 .up{
-		margin-top: 72px;
-	}
-	.px-main .pixel-03 img{
-		margin-top: -30px;
-	}
-	/* end home */
+	.px-main .pixel-03 .up{ margin-top: 72px; }
+	.px-main .pixel-03 img{ margin-top: -30px; }
+
 	/* about */
-	.about .pixel-01, .about .pixel-02, .about .pixel-03{
-		height: initial !important;
-	}
-	/* end about */
+	.about .pixel-01, .about .pixel-02, .about .pixel-03{ height: initial !important; }
+
 	/* latest-work */
-	#works ul li article footer .copyright p{
-		font: 9px/13px ralewaybold;
-	}
-	/* end latestwork */
+	#works ul li article footer .copyright p{ font: 9px/13px ralewaybold; }
+
 	/* price */
-	.price .zero-pixel{
-	    height: initial !important;
-	}
-	.price .pixel-01{
-		height: initial !important;
-	}
-	.price .zero-pixel h1{
-		margin-top: 8%;
-	}
-	.price .site-wrapper{
-		border-bottom: none;
-	}
-	.price .cover-container{
-		width: 85%;
-	}
-	/* end price */
+	.price .zero-pixel{ height: initial !important; }
+	.price .pixel-01{ height: initial !important; }
+	.price .zero-pixel h1{ margin-top: 8%; }
+	.price .site-wrapper{ border-bottom: none; }
+	.price .cover-container{ width: 85%; }
 }
 
 @media only screen and (min-width: 1380px){
@@ -366,8 +347,9 @@
 	/* End Spending NAVIGATION */
 
 	.site-wrapper{ padding: 11% 0 5%; }
+	.px-main .zero-pixel .site-wrapper { padding: 0 0 5%; }
 	.px-main .pixel-01 .site-wrapper, .px-main .pixel-02 .site-wrapper { padding: 5% 0; }
-	.px-main .pixel-03 .site-wrapper{ padding: 4% 0; }
+	.px-main .pixel-03 .site-wrapper{ padding: 4% 0 0; }
 	.about .site-wrapper{ padding: 2% 0; }
 	.site-left, .site-right{ padding: 0 3%; }
 	.masthead-brand, .mastfoot .inner h1{
@@ -1242,20 +1224,12 @@
 }
 
 @media (max-width: 667px){
-	.zero-pixel .cover-container .inner .lead{
-		padding-left: 0;
-	}
-	.m-main .zero-pixel .cover-container .inner h2 {
-	  margin-top: 0;
-	}
+	.zero-pixel .cover-container .inner .lead{ padding-left: 0; }
+	.m-main .zero-pixel .cover-container .inner h2 { margin-top: 0; }
 	
 	.site-wrapper{ padding: 5%; }
-	.cover-px .cover-middle{
-		padding: 0;
-	}
-	.cover-px .cover-middle h2{
-		margin-top: 60px;
-	}
+	.cover-px .cover-middle{ padding: 0; }
+	.cover-px .cover-middle h2{ margin-top: 60px; }
 	.cover-px .cover-middle h2 {
 		font: 50px ralewayregular;
 		margin-bottom: 30px;
@@ -1264,9 +1238,7 @@
 		font: 32px ralewayregular;
 		margin-bottom: 20px;
 	}
-	.cover-px p.summary{
-		font: 20px/30px ralewayregular;
-	}
+	.cover-px p.summary{ font: 20px/30px ralewayregular; }
 
 	/* home page */
 	.px-main .cover-container .inner .cover-heading {padding-top: 0;}
