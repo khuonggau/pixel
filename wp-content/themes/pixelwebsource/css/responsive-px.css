@@ -1,4 +1,3 @@
-
 @media only screen and (max-width: 1500px) {
 	/* home */
 	.px-main .pixel-03 .up{ margin-top: 72px; }
@@ -1541,6 +1540,7 @@
 	/* end price */
 }
 
+/* ================================================================================== */
 @media (max-width: 480px) {
 	/* design */
 	.design .pixel-01 { background-size: 80%; }
@@ -1551,6 +1551,11 @@
 	.term .site-wrapper .site-wrapper-inner { display: block; }
 }
 
+@media (max-width: 420px) {
+	/* Home Page */
+	.px-main .cover-heading span { width: 100%; display: block;}
+}
+
 @media (max-width: 414px) {
 	.zero-pixel .cover-container .inner .lead.mobile-01{
 		margin-top: 0;
@@ -1559,6 +1564,7 @@
 	.pixel-01 .cover-container .inner h2, .pixel-02 .cover-container .inner h2, .pixel-03 .cover-container .inner h2{
 		margin-top: 220px;
 	}
+
 	/* home page */
 	.field-of-business ul li a{
 		min-width: 57px;
@@ -1572,7 +1578,6 @@
 	.field-of-business .ul-02{
 		border-bottom: none;
 	}
-	/* end home page */
 
 	/* about */
 	.about .zero-pixel .cover-container .inner h2{
@@ -1619,8 +1624,7 @@
 	}
 	.marketing .cover-px.pixel-04 .cover-middle h2{
 		margin-top: 110px;
-	}	
-	/* end marketing */
+	}
 
 	/* partnership */
 	.partnership .cover-container .inner h2{
@@ -1636,7 +1640,7 @@
 	  -webkit-background-size: 90%;
 	  background-size: 90%;
 	}
-	/* end partnership */
+
 	/* price */
 	.price .zero-pixel {
 	    background: #fff url(../images/price/bg_top_small.jpg) center 21% no-repeat;
@@ -1661,13 +1665,12 @@
 	.price .item-price:nth-child(1) .title span {
 	    left: 37%;
 	}
-	/* end price */
 }
+
 @media (max-width: 	399px) {
-	.field-of-business .ul-02 {
-		width: initial;
-	}
+	.field-of-business .ul-02 { width: initial; }
 }
+
 @media (max-width: 	377px) {
 	.mastfoot .inner h1{
 		margin: 0 auto;
@@ -1764,9 +1767,7 @@
 	.privacy .cover-container, .term .cover-container{ margin-top: 100px; }
 
 	/* price */
-	.price .item-price ul {
-	    padding-left: 0;
-	}
+	.price .item-price ul { padding-left: 0; }
 }
 
 @media (max-width: 322px) {
@@ -1788,7 +1789,6 @@
 	.zero-pixel .cover-container .inner .lead.mobile-02{
 		  font: 14px/34px ralewaymedium;
 	}
-	/* end home page */
 
 	/* about */
 	.about .pixel-01 { background: #fff url(../photos/social-about-px1-n.png) center 12% no-repeat; -webkit-background-size: 80%; background-size: 80%; }
@@ -1808,9 +1808,7 @@
 	.design .zero-pixel .site-right { background-size: 100%; background-position: center center; }
 
 	/* marketing */
-	.marketing .pixel-04 .site-left h2{
-		margin-top: 0;
-	}
+	.marketing .pixel-04 .site-left h2{ margin-top: 0; }
 	.marketing .pixel-02 { background: #fff url(../photos/marketing-px-px2-n.png) center 95% no-repeat; -webkit-background-size: 80%; background-size: 80%; }
 
 	/* partnership */
@@ -1875,45 +1873,6 @@
 	    background: #fff url(../images/price/bg_top_small.jpg) center 20% no-repeat;
 	    -webkit-background-size: 85%;
 	    background-size: 85%;
-	}
-
-	/* blog */
-	.blog .item-blog{
-		margin-bottom: 20px !important;
-	}
-	.blog .item-blog .title{
-		
-	}
-	.blog .item-blog .title span {
-    	left: 22%;
-    }
-	.blog .zero-pixel{
-		height: initial !important;
-	}
-	.blog .item-blog h2 {
-    	font: 14px/14px ralewaysemibold; 
-    }
-    .blog .item-blog ul {
-	    min-height: auto;
-	}
-    .blog .item-blog ul li {
-	    font: 14px/14px ralewaymedium;
-	    padding: 20px 0;
-	}
-	.blog #px-nav{
-		color: #000;
-	}
-	.blog .cover-container{
-		width: 97%;
-	}
-	.blog .item-blog{
-		width: 100%;
-	}
-	.blog .mastnav{
-		background-color: #fff;
-	}
-	.blog .masthead-brand{
-		background-image:url(../images/logo2.png)
 	}
 }
 

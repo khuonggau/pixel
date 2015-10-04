@@ -857,6 +857,11 @@ _:-ms-fullscreen, :root .form-wrap .rq-form .input-wrap input{
 	font: 34px/34px ralewaymedium;
 	color: #000 !important;
 }
+.px-main .cover-heading span{
+	width: auto;
+	display: initial;
+	color: #8ACC43;
+}
 .px-main .cover-px p.up, .px-main .cover-px p.down{
 	font: 46px ralewaybold;
 	color: #fff;
