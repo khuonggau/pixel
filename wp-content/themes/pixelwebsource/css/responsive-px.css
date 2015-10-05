@@ -1553,7 +1553,7 @@
 
 @media (max-width: 420px) {
 	/* Home Page */
-	.px-main .cover-heading span { width: 100%; display: block;}
+	.px-main .cover-heading span { width: 100%; display: block; }
 }
 
 @media (max-width: 414px) {

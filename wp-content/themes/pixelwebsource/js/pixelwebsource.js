@@ -22,6 +22,11 @@ jQuery(function($){
 		$('html,body').animate({scrollTop:$('.pixel-05').offset().top},'slow');
 	});
 
+	$('.px-main .masthead-brand').click(function(e){
+		e.preventDefault()
+		$('html,body').animate({scrollTop:$('.zero-pixel').offset().top},'slow')
+	})
+
 	if( $(window).width() > 1600 ){
 		if( $(window).height() < 800 ){
 			/* Design Page */
@@ -34,10 +39,31 @@ jQuery(function($){
 		}
 	}
 
+	if($(window).width() < 767){
+		/* about*/
+		$('.about .pixel-02 .site-left').appendTo($('.about .pixel-02 .site-wrapper-inner'))
+		$('.about .pixel-01 .site-left, .about .pixel-02 .site-right, .about .pixel-03 .site-left').height(300);
+
+		/* design */
+		$('.design .zero-pixel .site-right').height(400);
+		$('.design .pixel-01 .site-left').height(300);
+
+		/* marketing */
+		$('.marketing .pixel-03 .site-left').appendTo($('.marketing .pixel-03 .site-wrapper-inner'))
+		$('.marketing .pixel-02 .site-right, .marketing .pixel-03 .site-left').height(300);
+
+		/* partnership */
+		$('.partnership .pixel-01 .site-left').appendTo($('.partnership .pixel-01 .site-wrapper-inner'))
+		$('.partnership .pixel-01 .site-left, .partnership .pixel-02 .site-right').height(300);
+
+		/* price */
+		$('.price .zero-pixel .site-left').appendTo($('.price .zero-pixel .site-wrapper-inner'))
+	}
+
 	if($(window).height() < 600){
 		/* Home Page */
 		$('.px-main .pixel-01, .px-main .pixel-02, .px-main .pixel-03').css({'height':'100%'});
-		$('.px-main .cover-px .inner').css({'margin-top':'70px'});
+		$('.px-main .cover-px .inner').css({'margin-top':'0'});
 		$('.animated img').css({'width':'250px','height':'auto'});
 
 		/* Design Page */
@@ -52,45 +78,8 @@ jQuery(function($){
 		$('.design .zero-pixel .site-right img').css({'width':''});
 	}
 
-	$('.px-main .masthead-brand').click(function(e){
-		e.preventDefault()
-		$('html,body').animate({scrollTop:$('.zero-pixel').offset().top},'slow')
-	})
-
-	function imgFirstTextAfter(){
-		if($(window).width() < 767){
-			/* about*/
-			$('.about .pixel-02 .site-left').appendTo($('.about .pixel-02 .site-wrapper-inner'))
-			$('.about .pixel-01 .site-left, .about .pixel-02 .site-right, .about .pixel-03 .site-left').height(300);
-
-			/* design */
-			$('.design .zero-pixel .site-right').height(400);
-			$('.design .pixel-01 .site-left').height(300);
-
-			/* marketing */
-			$('.marketing .pixel-03 .site-left').appendTo($('.marketing .pixel-03 .site-wrapper-inner'))
-			$('.marketing .pixel-02 .site-right, .marketing .pixel-03 .site-left').height(300);
-
-			/* partnership */
-			$('.partnership .pixel-01 .site-left').appendTo($('.partnership .pixel-01 .site-wrapper-inner'))
-			$('.partnership .pixel-01 .site-left, .partnership .pixel-02 .site-right').height(300);
-
-			/* price */
-			$('.price .zero-pixel .site-left').appendTo($('.price .zero-pixel .site-wrapper-inner'))
-		}
-	} // imgFirstTextAfter()
-
-	imgFirstTextAfter()
-
+	// Scroll Event
 	$(window).on('scroll',function(e){
-		// imgFirstTextAfter()
-
-		if($(window).width() <= 414){
-			$('.px-main .cover-heading span').css({'width':'100%','display':'block'})
-		}else{
-			$('.px-main .cover-heading span').css({'width':'auto','display':'initial'})
-		}
-
 		$('section').height($(window).height())
 		
 		$('.bullet-wrapper ul li span').css({'display':'none'});
@@ -114,11 +103,10 @@ jQuery(function($){
 
 		if($(window).scrollTop() >= lengthOfScroll){
 			$('.masthead-brand').css({'background-image':'url(wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
-			$('.about .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
-			$('.blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'});
+			$('.about .masthead-brand, .blog .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'})
 			$('.single-post .blog .masthead-brand, .archive .blog .masthead-brand').css({'background-image':'url(../../wp-content/themes/pixelwebsource/images/logo2.png)','background-position':'0 0'});
-			$('.privacy .masthead-brand,.term .masthead-brand,.price .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
-			$('.design .masthead-brand,.marketing .masthead-brand,.partnership .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
+			$('.privacy .masthead-brand, .term .masthead-brand, .price .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
+			$('.design .masthead-brand, .marketing .masthead-brand, .partnership .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.contact .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2-w.png)'})
 			$('.lastestwork .masthead-brand').css({'background-image':'url(../wp-content/themes/pixelwebsource/images/logo2.png)'})
 			$('.single-work .masthead-brand').css({'background-image':'url(../../images/logo2.png)'})
@@ -128,15 +116,9 @@ jQuery(function($){
 			$('.masthead-nav > li > a').css({'color':'#333','text-shadow':'none'})
 			$('.single-work .masthead-nav > li > a').css({'color':'#000','text-shadow':'none'})
 
-			$('.px-main #px-nav').css({'background-color':'#fff','color':'#000'})
-			$('.design #px-nav, .blog #px-nav, .price #px-nav').css({'background-color':'#fff','color':'#000'})
-			$('.marketing #px-nav').css({'background-color':'#fff','color':'#000'})
-			$('.partnership #px-nav').css({'background-color':'#fff','color':'#000'})
-			$('.about #px-nav').css({'background-color':'#fff','color':'#000'})
-			$('.lastestwork #px-nav').css({'background-color':'#fff','color':'#000'})
+			$('.px-main #px-nav, .design #px-nav, .blog #px-nav, .price #px-nav, .marketing #px-nav, .partnership #px-nav, .about #px-nav, .lastestwork #px-nav').css({'background-color':'#fff','color':'#000'})
 
-			$('.contact .mastnav').css({'background-color':'transparent'})
-			$('.thankyou .mastnav').css({'background-color':'transparent'})
+			$('.contact .mastnav, .thankyou .mastnav').css({'background-color':'transparent'})
 
 			if($(window).width() < 669){
 				// ===== Menu For Home Page =====
@@ -319,7 +301,7 @@ jQuery(function($){
 
 		if($(window).height() < 600){
 			/* Homepage Page */
-			$('.px-main .cover-px .inner').css({'margin-top':'70px'});
+			$('.px-main .cover-px .inner').css({'margin-top':'0'});
 			
 			/* Design Page */
 			$('.design .zero-pixel').css({'min-height':'700'});
