@@ -169,7 +169,7 @@ if($main_class == "price"){ ?>
 					get_template_part('template-parts/content','pricing');
 				}else if($main_class == 'contact'){
 					get_template_part('template-parts/content','contact');
-				}else if($main_class == 'privacy' || $main_class == 'term'){
+				}else if($main_class == 'thankyou' || $main_class == 'privacy' || $main_class == 'term'){
 					get_template_part('template-parts/content','privacy');
 				}
 			?>

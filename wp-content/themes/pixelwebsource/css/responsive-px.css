@@ -55,25 +55,23 @@
 	.zero-pixel	.cover-px p span{
 		font-family: pacificoregular;
 	}
-/* end normal form */
-/* about */
-	.about .cover-container .inner h2 {
-		font: 41px ralewayregular;
-		text-align: center;
-		color: #000;
-		margin-top: -20%;
-	}
 
-/* design */
+	/* About Page */
+	.about .cover-container .inner h2 { font: 41px ralewayregular; text-align: center; color: #000; margin-top: -20%; }
+
+	/* Design Page */
 	.design .pixel-wrapper{ background-size: cover; }
+	.design .zero-pixel .site-left h2, .marketing .zero-pixel .site-left h2 { font: 60px/60px "pacificoregular"; }
 	.design .pixel-01 { background: url(../photos/design-px-px2.jpg) 30% center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; }
 
-/* latest work */
-	.lastestwork #works-wrap #works{
-		width: 98%;
-	}
+	/* Partnership Page */
+	.partnership .cover-container .inner h2 { font: 60px/60px "pacificoregular"; }
+	
+	/* latest work */
+	.lastestwork #works-wrap #works{ width: 1200px; }
+	.lastestwork .zero-pixel .site-wrapper #works .cover-heading { font: 60px/60px "pacificoregular"; }
 
-/* price */
+	/* price */
 	.price .cover-container {
 	    width: 75%;
 	    margin: 0 auto;
@@ -94,9 +92,7 @@
 	.center-vertical{
 		margin-top: 0;
 	}
-	.price .zero-pixel h1 {
-	    font: 60px/60px "pacificoregular";
-	}
+	.price .zero-pixel h1 { font: 60px/60px "pacificoregular"; }
 	.price .zero-pixel .site-left p{
 		font: 30px/36px ralewayregular;
 	}
@@ -163,7 +159,7 @@
 	.price .item-price ul li.sn{
 		background-image: url(../images/price/11.png);
 	}
-/* end price */
+
 /* blog */
 	.blog .cover-container{
 		width: 95%;
@@ -171,7 +167,9 @@
 	.blog .scroll-down{
 		display: none;
 	}
-/* end blog */
+
+	/* Contact Page */
+	.contact .cover-heading { font: 60px/60px "pacificoregular"; }
 }
 @media (min-width: 1200px) {
 	/* Design Page */
@@ -179,8 +177,9 @@
 }
 
 @media (max-width: 1200px) {
-	/* latest work page */
+	/* Latest Work Page */
 	.masonry { -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }
+	.lastestwork #works-wrap #works{ width: 1100px; }
 
 	.price .cover-container{ width: 90%; }
 
@@ -192,6 +191,9 @@
 	/* marketing page */
 	.marketing .pixel-04{ background-position: 80% 25%; }
 
+	/* latest work */
+	.lastestwork #works-wrap #works{ width: 100%; }
+
 	/* price page */
 	.price .zero-pixel h1{
 		margin-top: 12%;
@@ -200,6 +202,8 @@
 
 
 @media (max-width: 1027px) {
+	/* latest work */
+	.lastestwork #works-wrap #works{ width: 100%; }
 
 	/* animation */
 	.moveRightToLeft{

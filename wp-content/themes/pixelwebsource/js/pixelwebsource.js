@@ -305,13 +305,13 @@ jQuery(function($){
 			
 			/* Design Page */
 			$('.design .zero-pixel').css({'min-height':'700'});
-			// $('.design .zero-pixel .site-right img').css({'width':'70%'});
+			$('.design .zero-pixel .site-right img').css({'width':'70%'});
 		}else{
 			/* Home Page */
 			$('.px-main .cover-px .inner').css({'margin-top':'70px'});
 
 			/* Design Page */
-			// $('.design .zero-pixel .site-right img').css({'width':''});
+			$('.design .zero-pixel .site-right img').css({'width':''});
 		}
 	}); // window.resize()
 
@@ -321,12 +321,13 @@ jQuery(function($){
 		$('#works ul li article .wrapper-img a').click(function(e){
 			e.preventDefault()
 			var getSRC = $(this).children().attr('src')
-			console.log(getSRC)
+
 			$('.zoom-wrapper').addClass('show')
-	
 			$('.zoom-wrapper ul li').append('<img src="'+getSRC+'" alt="" />').addClass('show')
 			$('.portfolio-btn').addClass('show')
 			$('.ablack').addClass('show')
+
+			$('html,body').animate({scrollTop:$('.site-wrapper').offset().top},'fast');
 		})
 	}
 

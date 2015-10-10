@@ -9,6 +9,10 @@
  * @package Pixelwebsource_Theme
  */
 
+// Custom Fields for Page, or Single Post
+if ( is_page() ) {
+	$main_class	= get_post_meta( $post->ID, 'main_class', true );
+}
 ?>
 
 <?php wp_footer(); ?>
@@ -58,6 +62,18 @@
 	        </div>
 	    </div><!-- form-wrap -->
 	</div><!-- request_form -->
+
+	<?php if($main_class == 'lastestwork'){ ?>
+	<!-- zoom photos -->
+	<div class="zoom-wrapper">
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	<div class="portfolio-btn glyphicon glyphicon-remove-sign"></div>
+	<div class="ablack"></div>
+	<!-- end zoom photos -->
+	<?php } ?>
 
 <script src="<?php bloginfo('template_directory'); ?>/js/forkit.js"></script>
     

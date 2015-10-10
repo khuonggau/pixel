@@ -485,7 +485,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	background: #e5f1ca;
 }
 #works-wrap #works {
-	width: 70%;
+	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -500,7 +500,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	background-color: #fff;
 }
 .lastestwork .zero-pixel .site-wrapper #works .cover-heading {
-    font: 60px/60px "pacificoregular";
+    font: 80px/80px "pacificoregular";
     color: #000;
     margin: 60px 0;
 }
@@ -513,17 +513,15 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	/*padding: 0;*/
 }
 #works ul li{
-	/*width: 25%;
-	float: left;*/
 	list-style-type: none;
-	/*padding: 0 10px;*/
+	padding-top: 10px;
 } 
 #works ul li article{
 	padding: 12px 0 0 0;
 	border-radius: 8px;
 	background-color: #fff;
 	border: 1px solid #cdcdcd;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 #works ul li article:hover{
 	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -577,7 +575,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 }
 #works ul li article footer .copyright p{
 	text-transform: uppercase;
-	font: 13px/13px ralewaybold;
+	font: 11px/13px ralewaybold;
 	color: #666;
 	margin-top: 24px;
 	float: left;
@@ -638,11 +636,9 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
     -webkit-column-count: 4;
     column-count: 4;
 }
-
 .masonry .item {
     display: inline-block;
     padding: 0;
-    width: 98%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -667,6 +663,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 }
 .partnership .cover-container .inner h2 {
 	margin-top: 18%;
+	font: 80px/80px pacificoregular;
 }
 .partnership .pixel-01 h2,.partnership .pixel-02 h2{
 	margin-top: -10%;

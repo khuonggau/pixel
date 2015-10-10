@@ -20,7 +20,7 @@
             				<p class="title"><?php the_title(); ?></p>
             			</header>
             			<div class="wrapper-img">
-            				<a href="#">
+            				<a href="">
 								<?php
 
 								// check for featured image
@@ -35,7 +35,9 @@
 							</a>
             			</div>
             			<footer>
+                            <?php if (get_field('button_text') == "visit website") { ?>
             				<a href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?></a>
+                            <?php } ?>
             				<div class="copyright">
             					<a href="http://www.pixelwebsource.com/"></a>
             					<p>designed by pixelwebsource</p>
