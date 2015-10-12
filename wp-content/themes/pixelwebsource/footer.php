@@ -73,6 +73,17 @@ if ( is_page() ) {
 	<div class="portfolio-btn glyphicon glyphicon-remove-sign"></div>
 	<div class="ablack"></div>
 	<!-- end zoom photos -->
+
+	<script src="<?php bloginfo('template_directory'); ?>/js/masonry.pkgd.min.js"></script>
+	<script>
+	jQuery(function($){
+		$('.grid').masonry({
+		  	// options
+		  	itemSelector: '.grid-item'
+		  	// columnWidth: 200
+		});
+	});
+	</script>
 	<?php } ?>
 
 <script src="<?php bloginfo('template_directory'); ?>/js/forkit.js"></script>

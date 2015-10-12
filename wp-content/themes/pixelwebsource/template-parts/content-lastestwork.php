@@ -8,13 +8,13 @@
     	<div id="works">
     		<h1 class="cover-heading">Our Latest Work</h1>
 
-    		<ul class="masonry">
+    		<ul class="grid">
 
 				<?php $loop = new WP_Query(array('post_type' => 'latest_work', 'orderby' => 'post_id', 'order' => 'ASC')); ?>
 				
 				<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-				<li class="item">
+				<li class="grid-item">
     				<article>
             			<header>
             				<p class="title"><?php the_title(); ?></p>
@@ -37,6 +37,8 @@
             			<footer>
                             <?php if (get_field('button_text') == "visit website") { ?>
             				<a href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?></a>
+                            <?php }else{ ?>
+                            <a href="javascript:void(0);" style="cursor:default;"><?php the_field('button_text'); ?></a>
                             <?php } ?>
             				<div class="copyright">
             					<a href="http://www.pixelwebsource.com/"></a>

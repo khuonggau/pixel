@@ -540,16 +540,13 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	letter-spacing: 1px;
 }
 #works ul li article .wrapper-img{
-	
 }
 #works ul li article .wrapper-img a{
-	
 }
 #works ul li article .wrapper-img a img{
 	width: 100%;
 }
 #works ul li article footer{
-	
 }
 #works ul li article footer > a{
 	margin: 10px 24px;
@@ -1314,4 +1311,14 @@ ul.page-numbers li {
 	color: #fff;
 	background-color: #8ACC43;
 	background-image: none;
+}
+
+
+
+.grid {
+	padding-left: 8px;
+}
+.grid-item {
+	width: 24%;
+	margin-right: 10px;
 }
