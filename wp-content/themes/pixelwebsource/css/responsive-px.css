@@ -910,7 +910,6 @@
 		padding-right: 30px;
 		margin: 0 0 20px 0;
 	}
-/* end home page */
 
 	.hide{
 		display: none !important; 
@@ -939,7 +938,7 @@
 		width: 122px;
 	}
 
-/* Latest Work Page */
+	/* Latest Work Page */
 	#single-work #work-images .work-image {
 	  margin-bottom: 20px;
 	}
@@ -956,7 +955,7 @@
 	.grid { padding-left: 0; }
 	.grid-item { width: 100%; }
 
-/* design */
+	/* design */
 	.design .pixel-01 {
 	  background: #fff url(../photos/design-px-px2-n.jpg) 5% center no-repeat;
 	  -webkit-background-size: 50%;
@@ -1087,7 +1086,9 @@
 	.blog .item-blog{
 		width: 100%;
 	}
-/* end blog */
+	
+	/* Blog Page */
+	.blog .site-wrapper { padding-left: 20px; padding-right: 20px; }
 }
 
 @media (min-width: 768px) {

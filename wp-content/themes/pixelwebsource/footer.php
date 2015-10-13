@@ -9,8 +9,10 @@
  * @package Pixelwebsource_Theme
  */
 
-// Custom Fields for Page, or Single Post
-if ( is_page() ) {
+// Custom Fields for Page
+if( is_home() ){
+	$main_class	= get_post_meta( get_option( 'page_for_posts' ), 'main_class', true );
+} elseif ( is_page() ) {
 	$main_class	= get_post_meta( $post->ID, 'main_class', true );
 }
 ?>
@@ -63,7 +65,7 @@ if ( is_page() ) {
 	    </div><!-- form-wrap -->
 	</div><!-- request_form -->
 
-	<?php if($main_class == 'lastestwork'){ ?>
+	<?php if( $main_class == 'lastestwork' || $main_class == 'blog' ){ ?>
 	<!-- zoom photos -->
 	<div class="zoom-wrapper">
 		<ul>
@@ -75,12 +77,15 @@ if ( is_page() ) {
 	<!-- end zoom photos -->
 
 	<script src="<?php bloginfo('template_directory'); ?>/js/masonry.pkgd.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/imagesloaded.pkgd.min.js"></script>
 	<script>
 	jQuery(function($){
-		$('.grid').masonry({
-		  	// options
-		  	itemSelector: '.grid-item'
-		  	// columnWidth: 200
+		$('.grid').imagesLoaded( function(){
+			$('.grid').masonry({
+			  	// options
+			  	itemSelector: '.grid-item'
+			  	// columnWidth: 200
+			});
 		});
 	});
 	</script>

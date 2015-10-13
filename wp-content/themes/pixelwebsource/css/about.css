@@ -271,7 +271,7 @@ _:-ms-fullscreen, :root .about .cover-container .inner h2 {
 .design .pixel-01 h2{
 	margin-top: -10px;
 }
-/* end design */
+
 /* contact -------------------------------------------------------------------------------------------------*/
 .ct-height{
 	height: initial !important;
@@ -344,13 +344,14 @@ _:-ms-fullscreen, :root .ct-height{
   color: #8ACC43;
   text-decoration: none;
 }
- #contact-form {
-  color: #8ACC43;
-  width: 480px;
-  margin: 10px auto 0;
-  position: relative;
-  z-index: 0;
-  top: 10px;
+#contact-form {
+	display: none;
+	color: #8ACC43;
+	width: 480px;
+	margin: 10px auto 0;
+	position: relative;
+	z-index: 0;
+	top: 10px;
 }
 .active#contact-form{
 	display: inline-block !important;
@@ -467,8 +468,8 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
   float: left;
   width: 100%;
   clear: both;
-}	
-/* end contact */
+}
+
 /* latestwork -------------------------------------------------------------------------------------------------*/
 .lastestwork .masthead-nav > li > a{
 	color: #000;
@@ -509,7 +510,6 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 }
 #works ul{
 	width: 100%;
-	float: left;
 	/*padding: 0;*/
 }
 #works ul li{
@@ -622,7 +622,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	z-index: 99999;
 }
 
-/* Masonry UI */
+/* Masonry UI for Latest Work and Blog Page */
 .masonry {
     padding: 0 10px;
     -moz-column-gap: 1.5em;
@@ -640,8 +640,15 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
-/* end sub-work ------------------------------------------------------------------------------------------------- */
-/* end latestwork */
+
+.grid {
+	padding-left: 8px;
+}
+.grid-item {
+	width: 24%;
+	margin-right: 10px;
+}
+
 /* partnership -------------------------------------------------------------------------------------------------*/
 .partnership .zero-pixel{
 	min-height: 500px;
@@ -688,7 +695,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 .partnership .thumbnail a>img{
 	margin-top: 24px;
 }
-/* end partnership */
+
 /* privacy & term -------------------------------------------------------------------------------------------------*/
 .privacy .masthead-brand, .term .masthead-brand {
 	  background-image: url(../images/logo2.png);
@@ -733,7 +740,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 .privacy .pixel-wrapper h2, .term .pixel-wrapper h2{
 	margin-top: 166px;
 }
-/* end privacy & term */
+
 /* thank you */
 .thankyou .pixel-wrapper{
 	background: url(../photos/thankyou.jpg) center center no-repeat;
@@ -742,7 +749,6 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	height: 100%;
 	padding-top: 0 !important;
 }
-/* end thank you */
 
 /* price */
 .price ul{
@@ -1040,14 +1046,14 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
     margin: 60px 0;
 }
 
-.blog ul.masonry{
+.blog ul.grid{
 	text-align: left;
 	color: #000;
 	text-shadow:none;
 	-webkit-text-shadow:none;
 	-moz-text-shadow:none;
 }
-.blog ul.masonry li.item article{
+.blog ul.grid li.grid-item article{
 	background-color: #fff;
 	overflow: hidden;
 	-webkit-border-radius: 8px;
@@ -1058,10 +1064,10 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 	box-shadow: 6px 6px 3px #c3c3c3;
 
 }
-.blog ul.masonry li.item .post a{
+.blog ul.grid li.grid-item .post a{
 	color: #000;
 }
-.blog ul.masonry li.item .post a:hover{
+.blog ul.grid li.grid-item .post a:hover{
 	color: #337ab7;
 }
 .blog .post img{
@@ -1078,7 +1084,7 @@ _:-ms-fullscreen, :root #contact-form div input#conactSubmit{
 .blog .post .post-content header h3{
 	font-family: 'ralewaysemibold', Helvetica, sans-serif;
 }
-.blog ul.masonry li.item .post .post-excerpt a{
+.blog ul.grid li.grid-item .post .post-excerpt a{
 	background-image: none;
 	background-color: #8ACC43;
 	color: #fff;
@@ -1177,7 +1183,7 @@ ul.page-numbers li {
     position: relative;
     border: 1px solid #ddd;
     background: #fff;
-    margin: 0 0 40px;
+    margin: 0 0 15px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -1311,14 +1317,4 @@ ul.page-numbers li {
 	color: #fff;
 	background-color: #8ACC43;
 	background-image: none;
-}
-
-
-
-.grid {
-	padding-left: 8px;
-}
-.grid-item {
-	width: 24%;
-	margin-right: 10px;
 }

@@ -17,7 +17,7 @@ get_header(); ?>
 	<div class="site-wrapper">
 	    <h1>Blog</h1>
 
-	    <ul class="masonry">
+	    <ul class="grid">
 			<!--<li class="item">
 				<article class="post">
 					<div class="post-image">
@@ -52,7 +52,7 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-				<li class="item">
+				<li class="grid-item">
 
 				<?php
 

@@ -26,6 +26,7 @@
 								// check for featured image
 								if( has_post_thumbnail ){
                                     $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+                                    // $thumbnail_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), large );
                                     $thumbnail_alt = get_post_meta(get_post_thumbnail_id($post->ID), '_wp_attachment_image_alt', true);
 
 									echo '<img src="'.$thumbnail_url.'" alt="'.$thumbnail_alt.'">';
@@ -38,7 +39,7 @@
                             <?php if (get_field('button_text') == "visit website") { ?>
             				<a href="<?php the_field('button_url'); ?>"><?php the_field('button_text'); ?></a>
                             <?php }else{ ?>
-                            <a href="javascript:void(0);" style="cursor:default;"><?php the_field('button_text'); ?></a>
+                            <a style="color:#666;background:none;display:inline-block;"><?php the_field('button_text'); ?></a>
                             <?php } ?>
             				<div class="copyright">
             					<a href="http://www.pixelwebsource.com/"></a>
