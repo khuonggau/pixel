@@ -37,6 +37,7 @@ if( is_home() ){
 	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/contact-us/">Contact us</a></li>
 	        	</ul>
 	        </div><!-- field-of-business -->
+
 	        <nav class="footer-social clearfix">
 	          	<a class="sc-tw" target="_blank" href="https://twitter.com/pixelwebsource"></a>
 	          	<a class="sc-pin" target="_blank" href="https://www.pinterest.com/pixelwebsource/"></a>
@@ -47,6 +48,7 @@ if( is_home() ){
 	        </nav><!-- footer-social -->
 
 	        <div class="bd-footer">
+	        	<a href="http://www.greenbusinessca.org/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bay-area-green-business.png" alt="Bay area green business" width="120"></a>
 	        	<p>Pixelwebsource is a professional web design and web development company in California.<br> 97 S Second St #100,  San Jose CA 95113<a href="mailto:info@pixelwebsource.com"> info@pixelwebsource.com</a> 408 230 5555</p>
 				<a class="pp-px" href="<?php bloginfo( 'url' ); ?>/privacy-policy/">Privacy Policy</a><a href="<?php bloginfo( 'url' ); ?>/terms-and-conditions/">Terms and Conditions</a>
 			</div><!-- bd-footer -->

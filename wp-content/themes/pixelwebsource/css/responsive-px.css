@@ -32,7 +32,7 @@
 	.px-main .cover-px p.down span{
 		font: 38px pacificoregular;
 	}
-/* end home page */
+
 /* normal form -------------------------------------------------------------------------------------------------*/
 	.cover-px ul li{
 		font: 18px/22px ralewayregular;
@@ -160,7 +160,7 @@
 		background-image: url(../images/price/11.png);
 	}
 
-/* blog */
+	/* blog */
 	.blog .cover-container{
 		width: 95%;
 	}
@@ -591,28 +591,16 @@
 	.price #px-nav{
 		color: #000;
 	}
-/* end price */
+
 /* blog */
-	.blog .item-blog .title span {
-    	left: 22%;
-    }
 	.blog .zero-pixel{
 		height: initial !important;
-	}
-	.blog .item-blog h2 {
-    	font: 20px/30px ralewaysemibold; 
-    }
-    .blog .item-blog ul {
-	    min-height: 348px;
-	}
-    .blog .item-blog ul li {
-	    font: 16px/30px ralewaymedium;
 	}
 	.blog #px-nav{
 		color: #000; background-color: #fff;
 	}
-/* end blog */
 }
+
 @media (min-width: 1025px) {
 	.mobile-request-a-quote{
 		display: none;
@@ -1054,28 +1042,9 @@
 		margin-top: 0;
 	}
 
-/* blog */
-	.blog .item-blog{
-		margin-bottom: 20px !important;
-	}
-	.blog .item-blog .title{
-
-	}
-	.blog .item-blog .title span {
-    	left: 35%;
-    }
+	/* Blog Page */
 	.blog .zero-pixel{
 		height: initial !important;
-	}
-	.blog .item-blog h2 {
-    	font: 30px/36px ralewaysemibold; 
-    }
-    .blog .item-blog ul {
-	    min-height: auto;
-	}
-    .blog .item-blog ul li {
-	    font: 30px/30px ralewaymedium;
-	    padding: 36px 0;
 	}
 	.blog #px-nav{
 		color: #fff;
@@ -1083,11 +1052,7 @@
 	.blog .cover-container{
 		width: 80%;
 	}
-	.blog .item-blog{
-		width: 100%;
-	}
-	
-	/* Blog Page */
+
 	.blog .site-wrapper { padding-left: 20px; padding-right: 20px; }
 }
 
@@ -1367,32 +1332,10 @@
 	.price .masthead-brand{
 		background-image:url(../images/logo2.png)
 	}
-	/* end price */
+
 	/* blog */
-	.blog .item-blog:first-child{
-		margin-top: 80px;
-	}
-	.blog .item-blog{
-		margin-bottom: 20px !important;
-	}
-	.blog .item-blog .title{
-		
-	}
-	.blog .item-blog .title span {
-    	left: 22%;
-    }
 	.blog .zero-pixel{
 		height: initial !important;
-	}
-	.blog .item-blog h2 {
-    	font: 14px/14px ralewaysemibold; 
-    }
-    .blog .item-blog ul {
-	    min-height: auto;
-	}
-    .blog .item-blog ul li {
-	    font: 14px/14px ralewaymedium;
-	    padding: 20px 0;
 	}
 	.blog #px-nav{
 		color: #000;
@@ -1401,17 +1344,14 @@
 	.blog .cover-container{
 		width: 97%;
 	}
-	.blog .item-blog{
-		width: 100%;
-	}
 	.blog .mastnav{
 		background-color: #fff;
 	}
 	.blog .masthead-brand{
 		background-image:url(../images/logo2.png)
 	}
-	/* end blog */	
 }
+
 @media (max-width: 640px){
 	.scroll-down {
 		bottom: 10px;
@@ -1452,7 +1392,6 @@
 	  padding: 0;
 	  width: 100%;
 	}
-	/* end form wrap */
 
 	/* contact */
 	.contact .site-wrapper{
