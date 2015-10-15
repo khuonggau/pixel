@@ -17,7 +17,7 @@ $banner_button_url		= get_field('banner_button_url');
 				<?php echo $banner_title_second; ?>
 			</h1>
 			<p class="lead">
-              <a href="<?php echo $banner_button_url; ?>" class="btn btn-lg btn-pixel"><?php echo $banner_button; ?></a>
+              <a href="<?php echo get_site_url() .'/'. $banner_button_url; ?>" class="btn btn-lg btn-pixel"><?php echo $banner_button; ?></a>
             </p>
 		</div>
 		<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0 site-right">

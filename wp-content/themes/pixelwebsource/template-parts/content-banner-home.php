@@ -19,7 +19,7 @@ $banner_button_url		= get_field('banner_button_url');
 	            <p class="cover-heading"><?php echo $banner_title_first; ?></p>
 	            <h1 class="lead mobile-02"><?php echo $banner_title_second; ?></h1>
 	            <p class="lead mobile-03">
-	              	<a href="<?php echo $banner_button_url; ?>" class="btn btn-lg btn-pixel"><?php echo $banner_button; ?></a>
+	              	<a href="<?php echo get_site_url() .'/'. $banner_button_url; ?>" class="btn btn-lg btn-pixel"><?php echo $banner_button; ?></a>
 	            </p>
 	        </div><!-- inner -->
         </div><!-- cover-container -->

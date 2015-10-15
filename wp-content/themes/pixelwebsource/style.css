@@ -515,6 +515,22 @@ a:hover{
 	margin-bottom: 18px;
 }
 
+/* Button Quote Request */
+.mobile-request-a-quote{
+	position: fixed;
+	width: 79px;
+	height: 34px;
+	border-radius: 20px;
+	background-color: #8ACC43;
+	right: 20px;
+	top: 10px;
+	text-transform: uppercase;
+	line-height: 2.5;
+	text-shadow: none;
+	z-index: 9999;
+	cursor: pointer;
+}
+
 /* forkit */
 .forkit {
 	position:fixed;

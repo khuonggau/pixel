@@ -184,7 +184,7 @@
 @media (max-width: 1027px) {
 	.price .zero-pixel .site-right .moving-gear{
 		/*margin-left: -40%;*/
-		margin-left: -5%; /* KKK */
+		margin: 0;
 		width: 400px; height: 400px;
 	}
 }

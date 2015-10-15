@@ -29,11 +29,11 @@ if( is_home() ){
 	        	<ul class="ul-01">
 	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/san-jose-web-design/">Web Design</a></li>
 	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/san-jose-internet-marketing/">marketing</a></li>
-	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/web-design-contractors-san-jose/">partnership</a></li>
+	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/web-design-partnerships/">partnership</a></li>
 	        	</ul>
 	        	<ul class="ul-02">
-	        		<li><a href="<?php bloginfo( 'url' ); ?>/best-web-designs-in-san-jose/">Latest work</a></li>
-	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/affordable-web-designs-in-san-jose/">Pricing</a></li>
+	        		<li><a href="<?php bloginfo( 'url' ); ?>/web-design-gallery/">Latest work</a></li>
+	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/web-design-pricing/">Pricing</a></li>
 	        	  	<li><a href="<?php bloginfo( 'url' ); ?>/contact-us/">Contact us</a></li>
 	        	</ul>
 	        </div><!-- field-of-business -->

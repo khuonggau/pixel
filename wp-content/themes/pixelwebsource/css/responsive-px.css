@@ -221,21 +221,7 @@
 	.forkit{
 		display: none;
 	}
-	.mobile-request-a-quote{
-		display: block;
-		position: fixed;
-		width: 79px;
-		height: 34px;
-		border-radius: 20px;
-		background-color: #8ACC43;
-		right: 20px;
-		top: 10px;
-		text-transform: uppercase;
-		line-height: 2.5;
-		text-shadow: none;
-		z-index: 9999;
-		cursor: pointer;
-	}
+	.mobile-request-a-quote{ display: block; position: fixed; width: 79px; height: 34px; border-radius: 20px; background-color: #8ACC43; right: 20px; top: 10px; text-transform: uppercase; line-height: 2.5; text-shadow: none; z-index: 9999; cursor: pointer; }
 	.forkit .tag{
 		display: none;
 	}
@@ -252,7 +238,7 @@
 		top: 0;
 		left: 0;
 	}
-	/* end request form */
+
 	/* Spending NAVIGATION */
 	.masthead-nav > li:nth-child(2) a{
 		cursor: pointer;
@@ -431,7 +417,7 @@
 		height: auto !important;
 	}
 
-/* latest work */
+	/* Latest Work Page */
 	.lastestwork #works-wrap{
 		padding: 0 0;
 	}
@@ -439,7 +425,7 @@
 		padding: 95px 0 0 0;
 		background-color: #e5f1ca;
 	}
-	.lastestwork #works-wrap #works { width: 100%; }
+	.lastestwork #works-wrap #works { width: 97%; }
 	.single-work .site-wrapper{
 		padding: 89px 0 0 0;
 	}
@@ -457,6 +443,7 @@
 		/*width: 100%;
 		margin: 8px 0;*/
 	}
+	.grid { padding-left: 8px; }
 	.grid-item { width: 32%; }
 
 /* design */
@@ -602,15 +589,9 @@
 }
 
 @media (min-width: 1025px) {
-	.mobile-request-a-quote{
-		display: none;
-	}
-	.zero-pixel .glyphicon,.zero-pixel .glyphicon-remove-sign{
-		display: none;
-	}
-	#px-nav{
-		display: none;
-	}
+	.mobile-request-a-quote{ display: none; }
+	.zero-pixel .glyphicon,.zero-pixel .glyphicon-remove-sign{ display: none; }
+	#px-nav{ display: none; }
 }
 
 @media (min-width: 992px) and (max-width: 1027px) {
@@ -638,7 +619,6 @@
 		font: 35px ralewaybold;
 		margin-bottom: 18px;
 	}
-	/* end normal form */
 
 	/* home page */
 	.px-main .zero-pixel .cover-container .inner h2{
@@ -677,7 +657,7 @@
 
 @media (min-width: 768px) and (max-width: 784px){
 	/* about */
-	.about .pixel-02 { background: #faf8f9 url(../photos/about-px2-n.png) 0% 50% no-repeat;-webkit-background-size: 50%;background-size: 50%; }
+	.about .pixel-02 { background: #faf8f9 url(../photos/about-px2-n.png) 90% 50% no-repeat;-webkit-background-size: 50%;background-size: 50%; }
 
 	/* marketing page */
 	.marketing .pixel-03 { background-position: 5% center; background-size: 40%; }
@@ -691,7 +671,7 @@
 	.form-wrap{
 		left: 45%;
 	}
-	/* end request form */
+
 	.bullet-wrapper{
 		right: 14px;
 	}
