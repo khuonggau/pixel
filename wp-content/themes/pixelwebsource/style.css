@@ -622,8 +622,8 @@ keyframes drag-it {
 }
 #request_form .close-button {
 	position:absolute;
-	width:32px;
-	height:32px;
+	width:45px;
+	height:45px;
 	right:10px;
 	top:10px;
 	cursor:pointer;
@@ -1180,7 +1180,7 @@ h1 a:hover{
 	text-align: center;
 }
 .glyphicon-remove-sign{
-	font-size: 24pt;
+	font-size: 32pt;
 	color: #8ACC43;
 }
 /* end vertical slide */

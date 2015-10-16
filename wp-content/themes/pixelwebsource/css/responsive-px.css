@@ -215,9 +215,8 @@
 	}
 
 	/* request form */
-	#request_form{
-		display: none;
-	}
+	/*#request_form{ display: none; }*/
+	
 	.forkit{
 		display: none;
 	}

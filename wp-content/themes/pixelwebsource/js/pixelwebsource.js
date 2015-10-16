@@ -360,29 +360,24 @@ jQuery(function($){
 	if( isMobile ){
 		// Display Quote Button for device
 		$('.mobile-request-a-quote').css({'display':'block'});
-		$('.mobile-request-a-quote').click(function(e){
-			e.preventDefault()
-			$('#request_form').removeClass('pushup').fadeIn('slow');
+
+		$('.mobile-request-a-quote').bind('touchstart click',function(){
+			$('#request_form').removeClass('pushup').addClass('pushdown');
 			$('#request_form').css({'top':'0%'});
-		})
+		});
 
 		// Hide Forkit for device
-		// $('.forkit').css({'display':'none'});
-		$('.forkit').remove();
+		$('.forkit').css({'display':'none'});
 	}
-			
+
 	if($(window).width() < 1025){
 		$('.mobile-request-a-quote').click(function(e){
 			e.preventDefault()
-			$('#request_form').removeClass('pushup').fadeIn('slow');
+			$('#request_form').removeClass('pushup').addClass('pushdown');
 			$('#request_form').css({'top':'0%'});
 		})
-
-		$('.close-button').click(function(e){
-			e.preventDefault()
-			$('#request_form').fadeOut('slow');
-		})
 	}
+
 	$('.masthead-nav > li').click(function(){
 		if($(this).hasClass('open-subnav')){
 			$(this).removeClass('open-subnav')
@@ -428,14 +423,15 @@ jQuery(function($){
 	})
 
 	/* price form */
-		$('.request-a-quote-price').click(function(e){
-			e.preventDefault()
-			$('#request_form').removeClass('pushup').addClass('pushdown')
-		})
-		$('.close-button').click(function(e){
-			e.preventDefault()
-			$('#request_form').removeClass('pushdown').addClass('pushup');
-		})
+	$('.request-a-quote-price').click(function(e){
+		e.preventDefault()
+		$('#request_form').removeClass('pushup').addClass('pushdown');
+	})
+	$('.close-button').bind('touchstart click',function(e){
+		e.preventDefault()
+		$('#request_form').removeClass('pushdown').addClass('pushup');
+		$('#request_form').css({'top':'-100%'});
+	})
 
 	if($(window).width() < 768){
 		// Footer
