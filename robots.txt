@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /privacy-policy
+Disallow: /terms-and-conditions
+Disallow: /pixelwebsource
+Disallow: /pixelWordpress
+Disallow: /blog
+Disallow: /seo/
+Disallow: /designer/

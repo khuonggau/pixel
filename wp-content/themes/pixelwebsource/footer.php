@@ -49,6 +49,7 @@ if( is_home() ){
 
 	        <div class="bd-footer">
 	        	<a href="http://www.greenbusinessca.org/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bay-area-green-business.png" alt="Bay area green business" width="120"></a>
+	        	<a href="http://web.sjchamber.com/Web-Design/Pixel-Websource-20343" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/SJSVCC-horizontal-standard.jpg" alt="San Jose Silicon Valley Chamber of Commerce" width="220"></a>
 	        	<p>Pixelwebsource is a professional web design and web development company in California.<br> 97 S Second St #100,  San Jose CA 95113<a href="mailto:info@pixelwebsource.com"> info@pixelwebsource.com</a> 408 230 5555</p>
 				<a class="pp-px" href="<?php bloginfo( 'url' ); ?>/privacy-policy/">Privacy Policy</a><a href="<?php bloginfo( 'url' ); ?>/terms-and-conditions/">Terms and Conditions</a>
 			</div><!-- bd-footer -->

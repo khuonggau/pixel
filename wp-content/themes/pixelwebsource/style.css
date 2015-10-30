@@ -1202,6 +1202,9 @@ h1 a:hover{
 	text-shadow: none;
 	font: 11px/18px ralewaymedium;
 }
+.bd-footer a:first-child {
+	margin-right: 20px;
+}
 .bd-footer .pp-px{
 	margin-right: 20px;
 }
